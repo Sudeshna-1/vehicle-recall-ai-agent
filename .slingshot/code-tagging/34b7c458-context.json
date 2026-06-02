@@ -17,11 +17,29 @@
           ]
         }
       ]
+    },
+    "6eef87a4": {
+      "value": [
+        {
+          "programming_language": "JavaScript",
+          "fileName": "auth.js",
+          "relativeFilePath": "auth.js",
+          "startLine": [
+            1
+          ],
+          "endLine": [
+            378
+          ]
+        }
+      ]
     }
   },
   "promptMessage": {
     "fd8215d0": {
       "value": "Simple Password Protection (JavaScript-based, 5 min setup, free) let's do this"
+    },
+    "99904a2e": {
+      "value": "same error and adding another error auth.js:338 Uncaught TypeError: Cannot read properties of null (reading 'style')\n    at initAuth (auth.js:338:19)\n    at auth.js:362:1\n(index):1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received\n(index):1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receiv"
     }
   },
   "localPrompts": {},

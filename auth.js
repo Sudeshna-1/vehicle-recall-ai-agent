@@ -295,6 +295,10 @@ function handleLogin(event) {
       
       setTimeout(() => {
         overlay.remove();
+        // Ensure body is visible after login
+        if (document.body) {
+          document.body.style.visibility = 'visible';
+        }
       }, 500);
     } else {
       // Failed attempt
@@ -346,18 +350,12 @@ function initAuth() {
   }
   
   if (!isAuthenticated()) {
-    // Hide page content - safely check body exists
+    // Show login screen first, then hide page content
+    showLoginScreen();
+    
+    // Hide page content AFTER login screen is shown - safely check body exists
     if (document.body) {
       document.body.style.visibility = 'hidden';
-    }
-    
-    // Wait for DOM to be ready
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', () => {
-        showLoginScreen();
-      });
-    } else {
-      showLoginScreen();
     }
   } else {
     // User is authenticated, show content - safely check body exists
