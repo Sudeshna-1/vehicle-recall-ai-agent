@@ -39,11 +39,35 @@
           ]
         }
       ]
+    },
+    "b6305bab": {
+      "value": [
+        {
+          "programming_language": "JSON",
+          "fileName": "vercel.json",
+          "relativeFilePath": "vercel.json",
+          "startLine": [
+            1
+          ],
+          "endLine": [
+            48
+          ]
+        }
+      ]
     }
   },
   "promptMessage": {
     "2eae57a5": {
       "value": "Help me deploying this code on cloud for everyone to access and interact on chatbot"
+    },
+    "9ec4f0da": {
+      "value": "getting error in vercel Header at index 1 has invalid `source` pattern \"/(.*\\.(js|css))\" while importing the project"
+    },
+    "ff178f1c": {
+      "value": "Same error Header at index 1 has invalid `source` pattern \"/(.*)\\.(?:js|css)$\"."
+    },
+    "df48455c": {
+      "value": "as per online search Unnamed groups like (?:js|css) are not supported, causing the build to fail.To fix the invalid header at index 1, update your vercel.json to use a path segment with the wildcard extension.How to FixReplace your regex source pattern with Vercel's supported path syntax:json{\n  \"source\": \"/(.*)\\\\.(js|css)\",\n  \"headers\": [\n    {\n      \"key\": \"Cache-Control\",\n      \"value\": \"public, max-age=31536000, immutable\"\n    }\n  ]\n}\nChange it to the standard Vercel format utilizing a catch"
     }
   },
   "localPrompts": {},

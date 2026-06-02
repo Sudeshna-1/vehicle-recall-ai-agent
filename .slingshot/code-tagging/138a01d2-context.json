@@ -1,0 +1,31 @@
+{
+  "filename": "auth.js",
+  "path": "auth.js",
+  "version": "1.1",
+  "files": {
+    "bed1d978": {
+      "value": [
+        {
+          "programming_language": "JSON",
+          "fileName": "vercel.json",
+          "relativeFilePath": "vercel.json",
+          "startLine": [
+            1
+          ],
+          "endLine": [
+            51
+          ]
+        }
+      ]
+    }
+  },
+  "promptMessage": {
+    "fd8215d0": {
+      "value": "Simple Password Protection (JavaScript-based, 5 min setup, free) let's do this"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

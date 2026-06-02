@@ -1,0 +1,1537 @@
+{
+  "AUTH_SETUP.md": {
+    "filename": "AUTH_SETUP.md",
+    "path": "AUTH_SETUP.md",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "bcf8c6": {
+        "user": "You",
+        "model": "gpt-4o",
+        "timestamp": 1780442001,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.5.2",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "fd8215d0",
+          "files": "bed1d978"
+        },
+        "hash": "3f88a83d",
+        "messageId": "system_42211fd0-5ed8-11f1-9bf5-4b3bf2742bfb",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4o\n- **timestamp**: 6/3/2026, 4:43:21 AM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "bcf8c6",
+        "hash": "7b85fe34",
+        "encoded": "#%20%F0%9F%94%90%20Password%20Protection%20Setup%20Guide",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "bcf8c6",
+        "hash": "4638ed98",
+        "encoded": "##%20%E2%9C%85%20Installation%20Complete!",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "bcf8c6",
+        "hash": "15e37389",
+        "encoded": "Your%20RecallCheck%20UK%20application%20now%20has%20**JavaScript-based%20password%20protection**%20implemented.",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "bcf8c6",
+        "hash": "b130fb01",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "bcf8c6",
+        "hash": "1b445a74",
+        "encoded": "##%20%F0%9F%9A%80%20Quick%20Start%20(5%20Minutes)",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "bcf8c6",
+        "hash": "8f533e23",
+        "encoded": "###%201.%20**Change%20the%20Default%20Password**%20%E2%9A%A0%EF%B8%8F",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "bcf8c6",
+        "hash": "d97bd99f",
+        "encoded": "**IMPORTANT:**%20The%20default%20password%20is%20%60RecallCheck2024!%60%20-%20you%20MUST%20change%20this!",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "bcf8c6",
+        "hash": "24c06039",
+        "encoded": "**How%20to%20change:**",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "bcf8c6",
+        "hash": "dc37451b",
+        "encoded": "1.%20Open%20%60auth.js%60",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "bcf8c6",
+        "hash": "5cc454dd",
+        "encoded": "2.%20Find%20line%2010-11:",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "bcf8c6",
+        "hash": "8b8080e1",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "bcf8c6",
+        "hash": "68bce48d",
+        "encoded": "password:%20'RecallCheck2024!',",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "bcf8c6",
+        "hash": "44568739",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "bcf8c6",
+        "hash": "5e5e3868",
+        "encoded": "3.%20Replace%20%60RecallCheck2024!%60%20with%20your%20secure%20password",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "bcf8c6",
+        "hash": "7e36bf31",
+        "encoded": "4.%20Save%20the%20file",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "bcf8c6",
+        "hash": "384b5df4",
+        "encoded": "**Password%20Tips:**",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "bcf8c6",
+        "hash": "4311fdeb",
+        "encoded": "-%20Use%20at%20least%2012%20characters",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "bcf8c6",
+        "hash": "438812ee",
+        "encoded": "-%20Mix%20uppercase,%20lowercase,%20numbers,%20and%20symbols",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "bcf8c6",
+        "hash": "5d6ec33d",
+        "encoded": "-%20Avoid%20common%20words%20or%20personal%20information",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "bcf8c6",
+        "hash": "6aef57f1",
+        "encoded": "-%20Example:%20%60MyS3cur3P@ssw0rd!2024%60",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "bcf8c6",
+        "hash": "0355d09c",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "bcf8c6",
+        "hash": "c4b70a24",
+        "encoded": "###%202.%20**Deploy%20to%20Vercel**",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "bcf8c6",
+        "hash": "46ebfbf2",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "bcf8c6",
+        "hash": "2d2654d0",
+        "encoded": "#%20If%20you%20haven't%20already,%20commit%20your%20changes",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "bcf8c6",
+        "hash": "7d951d57",
+        "encoded": "git%20add%20.",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "bcf8c6",
+        "hash": "703746a9",
+        "encoded": "git%20commit%20-m%20%22Add%20password%20protection%22",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "bcf8c6",
+        "hash": "5ebeb76c",
+        "encoded": "git%20push",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "bcf8c6",
+        "hash": "89af75d2",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "bcf8c6",
+        "hash": "567b301e",
+        "encoded": "Vercel%20will%20automatically%20redeploy%20with%20the%20new%20authentication.",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "bcf8c6",
+        "hash": "18972820",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "bcf8c6",
+        "hash": "26c7683b",
+        "encoded": "###%203.%20**Test%20the%20Protection**",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "bcf8c6",
+        "hash": "d2385ac1",
+        "encoded": "1.%20Visit%20your%20Vercel%20URL",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "bcf8c6",
+        "hash": "004375fd",
+        "encoded": "2.%20You%20should%20see%20a%20login%20screen",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "bcf8c6",
+        "hash": "57989cc4",
+        "encoded": "3.%20Enter%20your%20password",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "bcf8c6",
+        "hash": "60e1cde3",
+        "encoded": "4.%20You'll%20be%20granted%20access%20for%2024%20hours%20(configurable)",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "bcf8c6",
+        "hash": "d1f7f5ce",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "bcf8c6",
+        "hash": "80a1f863",
+        "encoded": "##%20%E2%9A%99%EF%B8%8F%20Configuration%20Options",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "bcf8c6",
+        "hash": "367a6919",
+        "encoded": "All%20settings%20are%20in%20%60auth.js%60%20(lines%208-22):",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "bcf8c6",
+        "hash": "d37b1648",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "bcf8c6",
+        "hash": "c47e6f60",
+        "encoded": "const%20AUTH_CONFIG%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "bcf8c6",
+        "hash": "83db4b6c",
+        "encoded": "//%20Your%20password",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "bcf8c6",
+        "hash": "93da0c1d",
+        "encoded": "password:%20'RecallCheck2024!',",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "bcf8c6",
+        "hash": "4b3389a9",
+        "encoded": "//%20How%20long%20users%20stay%20logged%20in%20(default:%2024%20hours)",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "bcf8c6",
+        "hash": "3051ae79",
+        "encoded": "sessionDuration:%2024%20*%2060%20*%2060%20*%201000,",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "bcf8c6",
+        "hash": "6ca33903",
+        "encoded": "//%20Maximum%20failed%20login%20attempts%20before%20lockout",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "bcf8c6",
+        "hash": "ea5d3012",
+        "encoded": "maxAttempts:%205,",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "bcf8c6",
+        "hash": "6c5878a3",
+        "encoded": "//%20Lockout%20duration%20after%20max%20attempts%20(default:%2015%20minutes)",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "bcf8c6",
+        "hash": "d0536eff",
+        "encoded": "lockoutDuration:%2015%20*%2060%20*%201000",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "bcf8c6",
+        "hash": "97ddb42a",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "bcf8c6",
+        "hash": "6edcfbbd",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "bcf8c6",
+        "hash": "e7a12be4",
+        "encoded": "###%20Common%20Customizations:",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "bcf8c6",
+        "hash": "1d51bf85",
+        "encoded": "**Change%20session%20to%201%20hour:**",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "bcf8c6",
+        "hash": "fadd4edc",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "bcf8c6",
+        "hash": "044b1920",
+        "encoded": "sessionDuration:%201%20*%2060%20*%2060%20*%201000,",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "bcf8c6",
+        "hash": "59260015",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "bcf8c6",
+        "hash": "c98ab250",
+        "encoded": "**Change%20session%20to%207%20days:**",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "bcf8c6",
+        "hash": "b84a408a",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "bcf8c6",
+        "hash": "1df687e7",
+        "encoded": "sessionDuration:%207%20*%2024%20*%2060%20*%2060%20*%201000,",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "bcf8c6",
+        "hash": "cfbdec98",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "bcf8c6",
+        "hash": "72112b49",
+        "encoded": "**Allow%2010%20login%20attempts:**",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "bcf8c6",
+        "hash": "2555e67b",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "bcf8c6",
+        "hash": "886b74d4",
+        "encoded": "maxAttempts:%2010,",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "bcf8c6",
+        "hash": "1888d09b",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "bcf8c6",
+        "hash": "43744055",
+        "encoded": "**Lockout%20for%2030%20minutes:**",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "bcf8c6",
+        "hash": "0d8da81f",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "bcf8c6",
+        "hash": "19e8a459",
+        "encoded": "lockoutDuration:%2030%20*%2060%20*%201000,",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "bcf8c6",
+        "hash": "c32ab8e3",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "bcf8c6",
+        "hash": "0e34c2b7",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "bcf8c6",
+        "hash": "89a15f63",
+        "encoded": "##%20%F0%9F%94%92%20Security%20Features",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "bcf8c6",
+        "hash": "c185b26e",
+        "encoded": "%E2%9C%85%20**Session%20Management**",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "bcf8c6",
+        "hash": "a3edf611",
+        "encoded": "-%20Users%20stay%20logged%20in%20for%2024%20hours%20(configurable)",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "bcf8c6",
+        "hash": "6cb7bbd5",
+        "encoded": "-%20Sessions%20stored%20in%20browser%20localStorage",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "bcf8c6",
+        "hash": "92728499",
+        "encoded": "-%20Auto-logout%20after%20session%20expires",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "bcf8c6",
+        "hash": "53ba6d03",
+        "encoded": "%E2%9C%85%20**Brute%20Force%20Protection**",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "bcf8c6",
+        "hash": "184cfd68",
+        "encoded": "-%20Maximum%205%20failed%20attempts%20(configurable)",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "bcf8c6",
+        "hash": "fa2a4193",
+        "encoded": "-%2015-minute%20lockout%20after%20max%20attempts",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "bcf8c6",
+        "hash": "5fd0c7a3",
+        "encoded": "-%20Attempt%20counter%20resets%20on%20successful%20login",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "bcf8c6",
+        "hash": "b8abb1a9",
+        "encoded": "%E2%9C%85%20**User%20Experience**",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "bcf8c6",
+        "hash": "80b1be9b",
+        "encoded": "-%20Beautiful,%20modern%20login%20screen",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "bcf8c6",
+        "hash": "9bf9260b",
+        "encoded": "-%20Real-time%20error%20feedback",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "bcf8c6",
+        "hash": "b6c7cd5a",
+        "encoded": "-%20Smooth%20animations%20and%20transitions",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "bcf8c6",
+        "hash": "6e669639",
+        "encoded": "-%20Mobile-responsive%20design",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "bcf8c6",
+        "hash": "6e496055",
+        "encoded": "-%20Logout%20button%20in%20navbar",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "bcf8c6",
+        "hash": "28c00e34",
+        "encoded": "%E2%9C%85%20**Page%20Protection**",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "bcf8c6",
+        "hash": "b3cbb912",
+        "encoded": "-%20Content%20hidden%20until%20authentication",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "bcf8c6",
+        "hash": "2afe739a",
+        "encoded": "-%20Script%20loads%20before%20page%20renders",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "bcf8c6",
+        "hash": "9a2f53cb",
+        "encoded": "-%20No%20flash%20of%20unprotected%20content",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "bcf8c6",
+        "hash": "bc685725",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "bcf8c6",
+        "hash": "ebacdd36",
+        "encoded": "##%20%F0%9F%93%B1%20How%20It%20Works",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "bcf8c6",
+        "hash": "6ea32bcf",
+        "encoded": "1.%20**Page%20Load:**%20%60auth.js%60%20runs%20immediately%20in%20%60%3Chead%3E%60",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "bcf8c6",
+        "hash": "454ce3d8",
+        "encoded": "2.%20**Check%20Auth:**%20Verifies%20if%20user%20has%20valid%20session%20in%20localStorage",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "bcf8c6",
+        "hash": "4b1f1a74",
+        "encoded": "3.%20**Not%20Authenticated:**%20Shows%20login%20screen,%20hides%20page%20content",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "bcf8c6",
+        "hash": "6fb5fe87",
+        "encoded": "4.%20**Authenticated:**%20Shows%20page%20content,%20adds%20logout%20button",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "bcf8c6",
+        "hash": "3aa8c4d8",
+        "encoded": "5.%20**Login%20Success:**%20Stores%20session%20with%20timestamp",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "bcf8c6",
+        "hash": "4a1a07d2",
+        "encoded": "6.%20**Session%20Expiry:**%20Auto-logout%20after%2024%20hours",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "bcf8c6",
+        "hash": "a459e1d5",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "bcf8c6",
+        "hash": "9f75d677",
+        "encoded": "##%20%F0%9F%8E%A8%20Login%20Screen%20Features",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "bcf8c6",
+        "hash": "d06bde53",
+        "encoded": "-%20**Modern%20Design:**%20Glassmorphism%20effect%20with%20gradient%20background",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "bcf8c6",
+        "hash": "b0e019c4",
+        "encoded": "-%20**Branded:**%20Shows%20RecallCheck%20UK%20branding",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "bcf8c6",
+        "hash": "457b2040",
+        "encoded": "-%20**Secure%20Icon:**%20Lock%20icon%20indicates%20protected%20access",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "bcf8c6",
+        "hash": "e1b36bb4",
+        "encoded": "-%20**Error%20Handling:**%20Clear%20feedback%20on%20incorrect%20passwords",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "bcf8c6",
+        "hash": "7cf77834",
+        "encoded": "-%20**Attempt%20Counter:**%20Shows%20remaining%20attempts",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "bcf8c6",
+        "hash": "b835b613",
+        "encoded": "-%20**Lockout%20Warning:**%20Displays%20lockout%20duration",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "bcf8c6",
+        "hash": "f5dce3c8",
+        "encoded": "-%20**Loading%20State:**%20Shows%20spinner%20during%20verification",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "bcf8c6",
+        "hash": "0056955f",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "bcf8c6",
+        "hash": "4e3e4021",
+        "encoded": "##%20%F0%9F%94%93%20User%20Instructions",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "bcf8c6",
+        "hash": "0ecd754e",
+        "encoded": "**To%20share%20with%20authorized%20users:**",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "bcf8c6",
+        "hash": "c0c55f42",
+        "encoded": "1.%20Visit%20the%20RecallCheck%20UK%20website",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "bcf8c6",
+        "hash": "9bfb9fb9",
+        "encoded": "2.%20You'll%20see%20a%20%22Protected%20Access%22%20login%20screen",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "bcf8c6",
+        "hash": "174724d6",
+        "encoded": "3.%20Enter%20the%20password%20(get%20this%20from%20the%20site%20administrator)",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "bcf8c6",
+        "hash": "ab031c2c",
+        "encoded": "4.%20Click%20%22Access%20Application%22",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "bcf8c6",
+        "hash": "ba945682",
+        "encoded": "5.%20You'll%20stay%20logged%20in%20for%2024%20hours",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "bcf8c6",
+        "hash": "cbc8dfae",
+        "encoded": "6.%20To%20logout%20manually,%20click%20the%20%22Logout%22%20button%20in%20the%20top%20navigation",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "bcf8c6",
+        "hash": "6bbe9820",
+        "encoded": "**If%20you%20forget%20the%20password:**",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "bcf8c6",
+        "hash": "073bc973",
+        "encoded": "-%20Contact%20the%20site%20administrator",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "bcf8c6",
+        "hash": "6e5e7a81",
+        "encoded": "-%20After%205%20failed%20attempts,%20you'll%20be%20locked%20out%20for%2015%20minutes",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "bcf8c6",
+        "hash": "1c09272f",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "bcf8c6",
+        "hash": "72c8320e",
+        "encoded": "##%20%F0%9F%9B%A0%EF%B8%8F%20Advanced%20Customization",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "bcf8c6",
+        "hash": "cb1a11a5",
+        "encoded": "###%20Change%20Login%20Screen%20Colors",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "bcf8c6",
+        "hash": "3c704ddd",
+        "encoded": "Edit%20%60auth.js%60%20around%20line%20145-160%20to%20modify%20the%20gradient:",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "bcf8c6",
+        "hash": "4c68c40e",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "bcf8c6",
+        "hash": "34caa08f",
+        "encoded": "background:%20linear-gradient(135deg,%20#1e293b%200%25,%20#0f172a%20100%25);",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "bcf8c6",
+        "hash": "cea911cf",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "bcf8c6",
+        "hash": "6869e627",
+        "encoded": "###%20Add%20Multiple%20Passwords",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "bcf8c6",
+        "hash": "b2f6c790",
+        "encoded": "Replace%20the%20%60verifyPassword%60%20function%20(line%20109):",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "bcf8c6",
+        "hash": "a03e7a6a",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "bcf8c6",
+        "hash": "2f8330c0",
+        "encoded": "function%20verifyPassword(inputPassword)%20%7B",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "bcf8c6",
+        "hash": "42b5dcd4",
+        "encoded": "const%20validPasswords%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "bcf8c6",
+        "hash": "a2510881",
+        "encoded": "'Password1!',",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "bcf8c6",
+        "hash": "9f49149c",
+        "encoded": "'Password2!',",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "bcf8c6",
+        "hash": "eae68d07",
+        "encoded": "'AdminPass123!'",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "bcf8c6",
+        "hash": "71c7e11a",
+        "encoded": "%5D;",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "bcf8c6",
+        "hash": "d3245eff",
+        "encoded": "return%20validPasswords.includes(inputPassword);",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "bcf8c6",
+        "hash": "536b52c1",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "bcf8c6",
+        "hash": "20018b99",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "bcf8c6",
+        "hash": "b824eb14",
+        "encoded": "###%20Remove%20Logout%20Button",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "bcf8c6",
+        "hash": "0a0a6eb9",
+        "encoded": "Comment%20out%20line%20351%20in%20%60auth.js%60:",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "bcf8c6",
+        "hash": "7d12a55a",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "bcf8c6",
+        "hash": "6cfd6857",
+        "encoded": "//%20addLogoutButton();",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "bcf8c6",
+        "hash": "cf0ca1be",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "bcf8c6",
+        "hash": "98332756",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "bcf8c6",
+        "hash": "8567d373",
+        "encoded": "##%20%E2%9A%A0%EF%B8%8F%20Important%20Security%20Notes",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "bcf8c6",
+        "hash": "7ec586f5",
+        "encoded": "###%20This%20is%20CLIENT-SIDE%20protection:",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "bcf8c6",
+        "hash": "363af71f",
+        "encoded": "-%20%E2%9C%85%20**Good%20for:**%20Keeping%20casual%20visitors%20out",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "bcf8c6",
+        "hash": "9911fb04",
+        "encoded": "-%20%E2%9C%85%20**Good%20for:**%20Sharing%20with%20trusted%20users",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "bcf8c6",
+        "hash": "6a62c70d",
+        "encoded": "-%20%E2%9C%85%20**Good%20for:**%20Free,%20simple%20protection",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "bcf8c6",
+        "hash": "8d5b1993",
+        "encoded": "-%20%E2%9D%8C%20**NOT%20for:**%20Highly%20sensitive%20data",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "bcf8c6",
+        "hash": "a0c11cbc",
+        "encoded": "-%20%E2%9D%8C%20**NOT%20for:**%20Preventing%20determined%20attackers",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "bcf8c6",
+        "hash": "d62b71a2",
+        "encoded": "-%20%E2%9D%8C%20**NOT%20for:**%20Production-grade%20security",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "bcf8c6",
+        "hash": "a5743704",
+        "encoded": "###%20Why?",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "bcf8c6",
+        "hash": "ff79394b",
+        "encoded": "-%20Password%20is%20visible%20in%20%60auth.js%60%20source%20code",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "bcf8c6",
+        "hash": "5d5235ea",
+        "encoded": "-%20Anyone%20can%20view%20page%20source%20and%20find%20the%20password",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "bcf8c6",
+        "hash": "9c386a0c",
+        "encoded": "-%20No%20server-side%20validation",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "bcf8c6",
+        "hash": "aa5337d7",
+        "encoded": "-%20localStorage%20can%20be%20manipulated",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "bcf8c6",
+        "hash": "c47386fa",
+        "encoded": "###%20For%20Better%20Security:",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "bcf8c6",
+        "hash": "d00ac929",
+        "encoded": "If%20you%20need%20stronger%20protection,%20consider:",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "bcf8c6",
+        "hash": "d5e90741",
+        "encoded": "1.%20**Vercel%20Password%20Protection**%20(Paid%20plans)",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "bcf8c6",
+        "hash": "aeac788e",
+        "encoded": "-%20Server-side%20authentication",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "bcf8c6",
+        "hash": "aa9bbdbd",
+        "encoded": "-%20Built%20into%20Vercel%20platform",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "bcf8c6",
+        "hash": "a8d5b25a",
+        "encoded": "-%20No%20code%20changes%20needed",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "bcf8c6",
+        "hash": "6cad4ed6",
+        "encoded": "2.%20**Auth0%20/%20Firebase%20Auth**%20(Free%20tier%20available)",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "bcf8c6",
+        "hash": "513fce00",
+        "encoded": "-%20Real%20user%20authentication",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "bcf8c6",
+        "hash": "0cf7fbec",
+        "encoded": "-%20Email/password%20or%20social%20login",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "bcf8c6",
+        "hash": "b2d146c8",
+        "encoded": "-%20Server-side%20validation",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "bcf8c6",
+        "hash": "12f32129",
+        "encoded": "3.%20**Cloudflare%20Access**%20(Free%20tier%20available)",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "bcf8c6",
+        "hash": "e97a1903",
+        "encoded": "-%20Zero%20Trust%20security",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "bcf8c6",
+        "hash": "92375f80",
+        "encoded": "-%20Email-based%20authentication",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "bcf8c6",
+        "hash": "38050235",
+        "encoded": "-%20Works%20with%20any%20hosting",
+        "prevChunkIds": []
+      },
+      "233": {
+        "chunkId": "bcf8c6",
+        "hash": "4aec4629",
+        "encoded": "4.%20**Basic%20Auth%20via%20Vercel%20Edge%20Functions**",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "bcf8c6",
+        "hash": "a214c026",
+        "encoded": "-%20Server-side%20protection",
+        "prevChunkIds": []
+      },
+      "235": {
+        "chunkId": "bcf8c6",
+        "hash": "f3ce41e0",
+        "encoded": "-%20HTTP%20Basic%20Authentication",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "bcf8c6",
+        "hash": "e1583dee",
+        "encoded": "-%20Requires%20Vercel%20Pro%20plan",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "bcf8c6",
+        "hash": "2173ea95",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "bcf8c6",
+        "hash": "0adf5dc5",
+        "encoded": "##%20%F0%9F%90%9B%20Troubleshooting",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "bcf8c6",
+        "hash": "8754db6d",
+        "encoded": "###%20Login%20screen%20doesn't%20appear",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "bcf8c6",
+        "hash": "788fcf70",
+        "encoded": "-%20Check%20browser%20console%20for%20errors",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "bcf8c6",
+        "hash": "84ad0b68",
+        "encoded": "-%20Verify%20%60auth.js%60%20is%20loaded%20in%20%60%3Chead%3E%60",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "bcf8c6",
+        "hash": "0ced3c57",
+        "encoded": "-%20Clear%20browser%20cache%20and%20reload",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "bcf8c6",
+        "hash": "480be247",
+        "encoded": "###%20Can't%20login%20with%20correct%20password",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "bcf8c6",
+        "hash": "a563fbda",
+        "encoded": "-%20Check%20for%20typos%20in%20%60auth.js%60%20password",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "bcf8c6",
+        "hash": "d52f36dd",
+        "encoded": "-%20Passwords%20are%20case-sensitive",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "bcf8c6",
+        "hash": "b2dec87f",
+        "encoded": "-%20Clear%20localStorage:%20%60localStorage.clear()%60%20in%20browser%20console",
+        "prevChunkIds": []
+      },
+      "252": {
+        "chunkId": "bcf8c6",
+        "hash": "ac7e5806",
+        "encoded": "###%20Locked%20out%20after%20failed%20attempts",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "bcf8c6",
+        "hash": "ed027283",
+        "encoded": "-%20Wait%2015%20minutes%20(or%20configured%20lockout%20duration)",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "bcf8c6",
+        "hash": "6f1baedf",
+        "encoded": "-%20OR%20clear%20localStorage:%20%60localStorage.clear()%60%20in%20browser%20console",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "bcf8c6",
+        "hash": "5d7aeb0f",
+        "encoded": "-%20OR%20change%20%60maxAttempts%60%20in%20%60auth.js%60%20and%20redeploy",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "bcf8c6",
+        "hash": "5f8aac87",
+        "encoded": "###%20Session%20expires%20too%20quickly",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "bcf8c6",
+        "hash": "5e002ff2",
+        "encoded": "-%20Increase%20%60sessionDuration%60%20in%20%60auth.js%60",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "bcf8c6",
+        "hash": "035072bb",
+        "encoded": "-%20Example:%20%60sessionDuration:%207%20*%2024%20*%2060%20*%2060%20*%201000%60%20for%207%20days",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "bcf8c6",
+        "hash": "e0cca352",
+        "encoded": "###%20Logout%20button%20not%20showing",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "bcf8c6",
+        "hash": "7f282270",
+        "encoded": "-%20Check%20if%20%60addLogoutButton()%60%20is%20called%20in%20%60auth.js%60%20(line%20351)",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "bcf8c6",
+        "hash": "cfc7ccde",
+        "encoded": "-%20Verify%20navbar%20HTML%20structure%20matches%20expected%20selectors",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "bcf8c6",
+        "hash": "ac373f02",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "bcf8c6",
+        "hash": "efc83e39",
+        "encoded": "##%20%F0%9F%93%8B%20Files%20Modified",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "bcf8c6",
+        "hash": "35e508af",
+        "encoded": "1.%20**%60auth.js%60**%20(NEW)",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "bcf8c6",
+        "hash": "feb73e47",
+        "encoded": "-%20Main%20authentication%20logic",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "bcf8c6",
+        "hash": "3588e826",
+        "encoded": "-%20Login%20screen%20UI",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "bcf8c6",
+        "hash": "93a47235",
+        "encoded": "-%20Session%20management",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "bcf8c6",
+        "hash": "a96761de",
+        "encoded": "-%20Security%20features",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "bcf8c6",
+        "hash": "679b45ce",
+        "encoded": "2.%20**%60index.html%60**%20(MODIFIED)",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "bcf8c6",
+        "hash": "efa370cf",
+        "encoded": "-%20Added%20%60%3Cscript%20src=%22auth.js%22%3E%3C/script%3E%60%20in%20%60%3Chead%3E%60",
+        "prevChunkIds": []
+      },
+      "277": {
+        "chunkId": "bcf8c6",
+        "hash": "576f4f32",
+        "encoded": "-%20Ensures%20auth%20runs%20before%20page%20renders",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "bcf8c6",
+        "hash": "a8ffeb8f",
+        "encoded": "3.%20**%60vercel.json%60**%20(NO%20CHANGES%20NEEDED)",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "bcf8c6",
+        "hash": "8b725c6b",
+        "encoded": "-%20Existing%20configuration%20works%20with%20auth.js",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "bcf8c6",
+        "hash": "31e15f98",
+        "encoded": "-%20No%20server-side%20changes%20required",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "bcf8c6",
+        "hash": "6e65a46c",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "bcf8c6",
+        "hash": "2a70e331",
+        "encoded": "##%20%E2%9C%85%20Deployment%20Checklist",
+        "prevChunkIds": []
+      },
+      "287": {
+        "chunkId": "bcf8c6",
+        "hash": "71ed6cd9",
+        "encoded": "-%20%5B%20%5D%20Changed%20default%20password%20in%20%60auth.js%60",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "bcf8c6",
+        "hash": "032d1112",
+        "encoded": "-%20%5B%20%5D%20Tested%20login%20locally",
+        "prevChunkIds": []
+      },
+      "289": {
+        "chunkId": "bcf8c6",
+        "hash": "40e85624",
+        "encoded": "-%20%5B%20%5D%20Configured%20session%20duration",
+        "prevChunkIds": []
+      },
+      "290": {
+        "chunkId": "bcf8c6",
+        "hash": "81c05dae",
+        "encoded": "-%20%5B%20%5D%20Configured%20max%20attempts%20and%20lockout",
+        "prevChunkIds": []
+      },
+      "291": {
+        "chunkId": "bcf8c6",
+        "hash": "308fbbd1",
+        "encoded": "-%20%5B%20%5D%20Committed%20changes%20to%20Git",
+        "prevChunkIds": []
+      },
+      "292": {
+        "chunkId": "bcf8c6",
+        "hash": "3df546e2",
+        "encoded": "-%20%5B%20%5D%20Pushed%20to%20repository",
+        "prevChunkIds": []
+      },
+      "293": {
+        "chunkId": "bcf8c6",
+        "hash": "620350d3",
+        "encoded": "-%20%5B%20%5D%20Verified%20Vercel%20deployment",
+        "prevChunkIds": []
+      },
+      "294": {
+        "chunkId": "bcf8c6",
+        "hash": "661f076a",
+        "encoded": "-%20%5B%20%5D%20Tested%20login%20on%20live%20site",
+        "prevChunkIds": []
+      },
+      "295": {
+        "chunkId": "bcf8c6",
+        "hash": "b42c74d1",
+        "encoded": "-%20%5B%20%5D%20Shared%20password%20with%20authorized%20users",
+        "prevChunkIds": []
+      },
+      "296": {
+        "chunkId": "bcf8c6",
+        "hash": "d22e4080",
+        "encoded": "-%20%5B%20%5D%20Documented%20password%20securely",
+        "prevChunkIds": []
+      },
+      "298": {
+        "chunkId": "bcf8c6",
+        "hash": "41128712",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "300": {
+        "chunkId": "bcf8c6",
+        "hash": "c7eb20bf",
+        "encoded": "##%20%F0%9F%8E%89%20You're%20All%20Set!",
+        "prevChunkIds": []
+      },
+      "302": {
+        "chunkId": "bcf8c6",
+        "hash": "c0c0c5c1",
+        "encoded": "Your%20RecallCheck%20UK%20application%20is%20now%20password-protected%20and%20ready%20to%20share%20with%20limited%20users.",
+        "prevChunkIds": []
+      },
+      "304": {
+        "chunkId": "bcf8c6",
+        "hash": "97df611b",
+        "encoded": "**Next%20Steps:**",
+        "prevChunkIds": []
+      },
+      "305": {
+        "chunkId": "bcf8c6",
+        "hash": "8cbbef16",
+        "encoded": "1.%20Change%20the%20password%20in%20%60auth.js%60",
+        "prevChunkIds": []
+      },
+      "306": {
+        "chunkId": "bcf8c6",
+        "hash": "7edc2fbb",
+        "encoded": "2.%20Deploy%20to%20Vercel",
+        "prevChunkIds": []
+      },
+      "307": {
+        "chunkId": "bcf8c6",
+        "hash": "14c8f7d2",
+        "encoded": "3.%20Test%20the%20login",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "bcf8c6",
+        "hash": "5cb51594",
+        "encoded": "4.%20Share%20the%20password%20with%20authorized%20users",
+        "prevChunkIds": []
+      },
+      "310": {
+        "chunkId": "bcf8c6",
+        "hash": "29fd584b",
+        "encoded": "**Need%20Help?**",
+        "prevChunkIds": []
+      },
+      "311": {
+        "chunkId": "bcf8c6",
+        "hash": "1558eb20",
+        "encoded": "-%20Check%20the%20troubleshooting%20section%20above",
+        "prevChunkIds": []
+      },
+      "312": {
+        "chunkId": "bcf8c6",
+        "hash": "5b837832",
+        "encoded": "-%20Review%20the%20configuration%20options",
+        "prevChunkIds": []
+      },
+      "313": {
+        "chunkId": "bcf8c6",
+        "hash": "cd374f03",
+        "encoded": "-%20Test%20in%20incognito%20mode%20to%20simulate%20new%20users",
+        "prevChunkIds": []
+      },
+      "315": {
+        "chunkId": "bcf8c6",
+        "hash": "4c3ce847",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "317": {
+        "chunkId": "bcf8c6",
+        "hash": "d1b6f516",
+        "encoded": "##%20%F0%9F%93%9E%20Support",
+        "prevChunkIds": []
+      },
+      "319": {
+        "chunkId": "bcf8c6",
+        "hash": "20f5c697",
+        "encoded": "If%20you%20encounter%20issues:",
+        "prevChunkIds": []
+      },
+      "320": {
+        "chunkId": "bcf8c6",
+        "hash": "9c5db44a",
+        "encoded": "1.%20Check%20browser%20console%20for%20errors",
+        "prevChunkIds": []
+      },
+      "321": {
+        "chunkId": "bcf8c6",
+        "hash": "147e5503",
+        "encoded": "2.%20Verify%20all%20files%20are%20deployed%20correctly",
+        "prevChunkIds": []
+      },
+      "322": {
+        "chunkId": "bcf8c6",
+        "hash": "726ab738",
+        "encoded": "3.%20Clear%20browser%20cache%20and%20localStorage",
+        "prevChunkIds": []
+      },
+      "323": {
+        "chunkId": "bcf8c6",
+        "hash": "276f1146",
+        "encoded": "4.%20Test%20in%20incognito/private%20browsing%20mode",
+        "prevChunkIds": []
+      },
+      "325": {
+        "chunkId": "bcf8c6",
+        "hash": "dee522f3",
+        "encoded": "**Common%20Commands:**",
+        "prevChunkIds": []
+      },
+      "326": {
+        "chunkId": "bcf8c6",
+        "hash": "6817c683",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "327": {
+        "chunkId": "bcf8c6",
+        "hash": "ae04cff5",
+        "encoded": "//%20Clear%20authentication%20(run%20in%20browser%20console)",
+        "prevChunkIds": []
+      },
+      "328": {
+        "chunkId": "bcf8c6",
+        "hash": "5f6707c7",
+        "encoded": "localStorage.clear();",
+        "prevChunkIds": []
+      },
+      "330": {
+        "chunkId": "bcf8c6",
+        "hash": "68244d63",
+        "encoded": "//%20Check%20current%20auth%20status",
+        "prevChunkIds": []
+      },
+      "331": {
+        "chunkId": "bcf8c6",
+        "hash": "a0732c1a",
+        "encoded": "localStorage.getItem('recallcheck_auth');",
+        "prevChunkIds": []
+      },
+      "333": {
+        "chunkId": "bcf8c6",
+        "hash": "86e92bbf",
+        "encoded": "//%20Check%20lockout%20status",
+        "prevChunkIds": []
+      },
+      "334": {
+        "chunkId": "bcf8c6",
+        "hash": "34fb23ac",
+        "encoded": "localStorage.getItem('recallcheck_auth_lockout');",
+        "prevChunkIds": []
+      },
+      "335": {
+        "chunkId": "bcf8c6",
+        "hash": "855e992f",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "337": {
+        "chunkId": "bcf8c6",
+        "hash": "8c460c16",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "339": {
+        "chunkId": "bcf8c6",
+        "hash": "2651ec69",
+        "encoded": "**Setup%20Time:**%20%E2%8F%B1%EF%B8%8F%20~5%20minutes",
+        "prevChunkIds": []
+      },
+      "340": {
+        "chunkId": "bcf8c6",
+        "hash": "f7e2dc3a",
+        "encoded": "**Cost:**%20%F0%9F%92%B0%20Free",
+        "prevChunkIds": []
+      },
+      "341": {
+        "chunkId": "bcf8c6",
+        "hash": "a46ceb5e",
+        "encoded": "**Difficulty:**%20%F0%9F%9F%A2%20Easy",
+        "prevChunkIds": []
+      },
+      "342": {
+        "chunkId": "bcf8c6",
+        "hash": "049ae849",
+        "encoded": "**Security%20Level:**%20%F0%9F%94%92%20Basic%20(client-side)",
+        "prevChunkIds": []
+      },
+      "344": {
+        "chunkId": "bcf8c6",
+        "hash": "b2979f5f",
+        "encoded": "Enjoy%20your%20password-protected%20RecallCheck%20UK%20application!%20%F0%9F%9A%97%E2%9C%A8",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
