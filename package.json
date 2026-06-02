@@ -1,0 +1,30 @@
+{
+  "name": "uk-vehicle-recall-checker",
+  "version": "1.0.0",
+  "description": "AI-powered chatbot for checking UK vehicle safety recalls",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -o",
+    "deploy:netlify": "netlify deploy --prod",
+    "deploy:vercel": "vercel --prod",
+    "deploy:firebase": "firebase deploy --only hosting"
+  },
+  "keywords": [
+    "vehicle",
+    "recall",
+    "chatbot",
+    "dvsa",
+    "uk",
+    "safety",
+    "vin",
+    "v5c"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/uk-recall-checker.git"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}

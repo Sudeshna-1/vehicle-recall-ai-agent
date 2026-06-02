@@ -1,0 +1,211 @@
+{
+  "package.json": {
+    "filename": "package.json",
+    "path": "package.json",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "c4cc49": {
+        "user": "You",
+        "model": "gpt-4o",
+        "timestamp": 1780438238,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.5.2",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "2eae57a5",
+          "files": "c198b112"
+        },
+        "hash": "f9516f2e",
+        "messageId": "system_771f57a0-5ecf-11f1-9bf5-4b3bf2742bfb",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4o\n- **timestamp**: 6/3/2026, 3:40:38 AM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "c4cc49",
+        "hash": "47009686",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "c4cc49",
+        "hash": "d4677c79",
+        "encoded": "%22name%22:%20%22uk-vehicle-recall-checker%22,",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "c4cc49",
+        "hash": "bde4980f",
+        "encoded": "%22version%22:%20%221.0.0%22,",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "c4cc49",
+        "hash": "c3af91b7",
+        "encoded": "%22description%22:%20%22AI-powered%20chatbot%20for%20checking%20UK%20vehicle%20safety%20recalls%22,",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "c4cc49",
+        "hash": "0ab684ba",
+        "encoded": "%22main%22:%20%22index.html%22,",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "c4cc49",
+        "hash": "f4278672",
+        "encoded": "%22scripts%22:%20%7B",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "c4cc49",
+        "hash": "72cc7325",
+        "encoded": "%22start%22:%20%22npx%20http-server%20-p%208000%20-o%22,",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "c4cc49",
+        "hash": "9bc80bbc",
+        "encoded": "%22deploy:netlify%22:%20%22netlify%20deploy%20--prod%22,",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "c4cc49",
+        "hash": "0c867d01",
+        "encoded": "%22deploy:vercel%22:%20%22vercel%20--prod%22,",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "c4cc49",
+        "hash": "157ffdaa",
+        "encoded": "%22deploy:firebase%22:%20%22firebase%20deploy%20--only%20hosting%22",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "c4cc49",
+        "hash": "edd993f3",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "c4cc49",
+        "hash": "ee8a6bb0",
+        "encoded": "%22keywords%22:%20%5B",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "c4cc49",
+        "hash": "26c5b462",
+        "encoded": "%22vehicle%22,",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "c4cc49",
+        "hash": "f0e214e4",
+        "encoded": "%22recall%22,",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "c4cc49",
+        "hash": "3c02242d",
+        "encoded": "%22chatbot%22,",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "c4cc49",
+        "hash": "dfcab274",
+        "encoded": "%22dvsa%22,",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "c4cc49",
+        "hash": "06862737",
+        "encoded": "%22uk%22,",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "c4cc49",
+        "hash": "eb427a48",
+        "encoded": "%22safety%22,",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "c4cc49",
+        "hash": "2a02592b",
+        "encoded": "%22vin%22,",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "c4cc49",
+        "hash": "a47cb585",
+        "encoded": "%22v5c%22",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "c4cc49",
+        "hash": "6e25364d",
+        "encoded": "%5D,",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "c4cc49",
+        "hash": "660b64e2",
+        "encoded": "%22author%22:%20%22Your%20Name%22,",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "c4cc49",
+        "hash": "983b2787",
+        "encoded": "%22license%22:%20%22MIT%22,",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "c4cc49",
+        "hash": "d6fbfc90",
+        "encoded": "%22repository%22:%20%7B",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "c4cc49",
+        "hash": "83c53139",
+        "encoded": "%22type%22:%20%22git%22,",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "c4cc49",
+        "hash": "dd540e42",
+        "encoded": "%22url%22:%20%22https://github.com/YOUR_USERNAME/uk-recall-checker.git%22",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "c4cc49",
+        "hash": "0b87a378",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "c4cc49",
+        "hash": "8d128f20",
+        "encoded": "%22devDependencies%22:%20%7B%7D,",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "c4cc49",
+        "hash": "06779990",
+        "encoded": "%22dependencies%22:%20%7B%7D",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "c4cc49",
+        "hash": "7721e417",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

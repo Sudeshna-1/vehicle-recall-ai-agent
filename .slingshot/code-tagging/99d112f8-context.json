@@ -1,0 +1,53 @@
+{
+  "filename": "package.json",
+  "path": "package.json",
+  "version": "1.1",
+  "files": {
+    "c198b112": {
+      "value": [
+        {
+          "programming_language": "HTML",
+          "fileName": "index.html",
+          "relativeFilePath": "index.html",
+          "startLine": [
+            1
+          ],
+          "endLine": [
+            259
+          ]
+        },
+        {
+          "programming_language": "CSS",
+          "fileName": "styles.css",
+          "relativeFilePath": "styles.css",
+          "startLine": [
+            1
+          ],
+          "endLine": [
+            519
+          ]
+        },
+        {
+          "programming_language": "JavaScript",
+          "fileName": "app.js",
+          "relativeFilePath": "app.js",
+          "startLine": [
+            1
+          ],
+          "endLine": [
+            670
+          ]
+        }
+      ]
+    }
+  },
+  "promptMessage": {
+    "2eae57a5": {
+      "value": "Help me deploying this code on cloud for everyone to access and interact on chatbot"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

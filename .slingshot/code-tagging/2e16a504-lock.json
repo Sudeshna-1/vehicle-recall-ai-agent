@@ -1,0 +1,319 @@
+{
+  "vercel.json": {
+    "filename": "vercel.json",
+    "path": "vercel.json",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "73f993": {
+        "user": "You",
+        "model": "gpt-4o",
+        "timestamp": 1780438237,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.5.2",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "2eae57a5",
+          "files": "c198b112"
+        },
+        "hash": "511855e5",
+        "messageId": "system_771f57a0-5ecf-11f1-9bf5-4b3bf2742bfb",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4o\n- **timestamp**: 6/3/2026, 3:40:37 AM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "73f993",
+        "hash": "47009686",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "73f993",
+        "hash": "dcd014af",
+        "encoded": "%22version%22:%202,",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "73f993",
+        "hash": "9fcf00a0",
+        "encoded": "%22name%22:%20%22uk-vehicle-recall-checker%22,",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "73f993",
+        "hash": "ecfc3e31",
+        "encoded": "%22builds%22:%20%5B",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "73f993",
+        "hash": "19c0acd5",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "73f993",
+        "hash": "15524888",
+        "encoded": "%22src%22:%20%22index.html%22,",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "73f993",
+        "hash": "720cfb3c",
+        "encoded": "%22use%22:%20%22@vercel/static%22",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "73f993",
+        "hash": "102658a5",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "73f993",
+        "hash": "818ed0d6",
+        "encoded": "%5D,",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "73f993",
+        "hash": "6b43586a",
+        "encoded": "%22routes%22:%20%5B",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "73f993",
+        "hash": "190a3676",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "73f993",
+        "hash": "dc3b914b",
+        "encoded": "%22src%22:%20%22/(.*)%22,",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "73f993",
+        "hash": "48aad8e0",
+        "encoded": "%22dest%22:%20%22/index.html%22",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "73f993",
+        "hash": "e683dcf7",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "73f993",
+        "hash": "fd9719e2",
+        "encoded": "%5D,",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "73f993",
+        "hash": "c66310ff",
+        "encoded": "%22headers%22:%20%5B",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "73f993",
+        "hash": "f06cfb55",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "73f993",
+        "hash": "10e2d1e6",
+        "encoded": "%22source%22:%20%22/(.*)%22,",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "73f993",
+        "hash": "ae7be85d",
+        "encoded": "%22headers%22:%20%5B",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "73f993",
+        "hash": "5e8aef52",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "73f993",
+        "hash": "aefe9a6d",
+        "encoded": "%22key%22:%20%22X-Content-Type-Options%22,",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "73f993",
+        "hash": "52733c9e",
+        "encoded": "%22value%22:%20%22nosniff%22",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "73f993",
+        "hash": "6d666e52",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "73f993",
+        "hash": "b225146a",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "73f993",
+        "hash": "4ce61b4d",
+        "encoded": "%22key%22:%20%22X-Frame-Options%22,",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "73f993",
+        "hash": "ba16e34c",
+        "encoded": "%22value%22:%20%22DENY%22",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "73f993",
+        "hash": "0b87a378",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "73f993",
+        "hash": "c3d55038",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "73f993",
+        "hash": "d9dc0adc",
+        "encoded": "%22key%22:%20%22X-XSS-Protection%22,",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "73f993",
+        "hash": "0b48c67a",
+        "encoded": "%22value%22:%20%221;%20mode=block%22",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "73f993",
+        "hash": "f8124d3b",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "73f993",
+        "hash": "ebf3f52a",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "73f993",
+        "hash": "ac309c0f",
+        "encoded": "%22key%22:%20%22Referrer-Policy%22,",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "73f993",
+        "hash": "fb9381bf",
+        "encoded": "%22value%22:%20%22strict-origin-when-cross-origin%22",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "73f993",
+        "hash": "b8d59d8e",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "73f993",
+        "hash": "cd39fd8f",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "73f993",
+        "hash": "6bb93cd8",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "73f993",
+        "hash": "84cc2b15",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "73f993",
+        "hash": "ca115109",
+        "encoded": "%22source%22:%20%22/(.*%5C%5C.(js%7Ccss))%22,",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "73f993",
+        "hash": "975311a7",
+        "encoded": "%22headers%22:%20%5B",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "73f993",
+        "hash": "17a56fa2",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "73f993",
+        "hash": "04f4ca9e",
+        "encoded": "%22key%22:%20%22Cache-Control%22,",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "73f993",
+        "hash": "42e5b0e3",
+        "encoded": "%22value%22:%20%22public,%20max-age=31536000,%20immutable%22",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "73f993",
+        "hash": "d6071ac7",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "73f993",
+        "hash": "db4f7d7b",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "73f993",
+        "hash": "8b687a61",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "73f993",
+        "hash": "eed87b26",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "73f993",
+        "hash": "57c5213d",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

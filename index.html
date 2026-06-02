@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UK Vehicle Recall Checker</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ══════════════ NAVBAR ══════════════ -->
+<nav class="navbar-ai">
+  <div class="container d-flex align-items-center justify-content-between">
+    <a href="#" class="brand">
+      <div class="logo-icon"><i class="fa fa-car-burst"></i></div>
+      RecallCheck <span class="ms-1 fw-normal opacity-50">UK</span>
+    </a>
+    <div class="d-flex align-items-center gap-3">
+      <span class="gov-badge d-none d-sm-inline"><i class="fa fa-crown me-1"></i>DVSA Data</span>
+      <button class="btn-ai-primary py-2 px-3" style="font-size:.82rem" onclick="openChat()">
+        <i class="fa fa-robot me-2"></i>Check Vehicle
+      </button>
+      <div class="theme-switcher">
+        <button class="theme-btn" onclick="toggleThemeMenu()" title="Change colour theme">
+          <i class="fa fa-palette"></i>
+          <span class="d-none d-md-inline">Theme</span>
+        </button>
+        <div class="theme-menu" id="themeMenu">
+          <div class="theme-swatch active" onclick="applyTheme('')"             data-theme=""><span class="swatch-dot" style="background:linear-gradient(135deg,#4f8ef7,#7b5ea7)"></span>Dark Blue</div>
+          <div class="theme-swatch"        onclick="applyTheme('theme-purple')" data-theme="theme-purple"><span class="swatch-dot" style="background:linear-gradient(135deg,#a78bfa,#ec4899)"></span>Purple</div>
+          <div class="theme-swatch"        onclick="applyTheme('theme-green')"  data-theme="theme-green"><span class="swatch-dot"  style="background:linear-gradient(135deg,#34d399,#059669)"></span>Emerald</div>
+          <div class="theme-swatch"        onclick="applyTheme('theme-orange')" data-theme="theme-orange"><span class="swatch-dot" style="background:linear-gradient(135deg,#fb923c,#ef4444)"></span>Amber</div>
+          <div class="theme-swatch"        onclick="applyTheme('theme-light')"  data-theme="theme-light"><span class="swatch-dot"  style="background:linear-gradient(135deg,#e2e8f0,#94a3b8)"></span>Light</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero position-relative">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="container position-relative" style="z-index:1">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <div class="hero-eyebrow">
+          <span style="width:6px;height:6px;background:var(--accent);border-radius:50%;display:inline-block"></span>
+          AI-Powered Safety Check
+        </div>
+        <h1>Know if your vehicle<br>has an active recall</h1>
+        <p class="mt-3">Instantly check DVSA recall data using your VIN and V5C number. Free repairs. Find your nearest dealer in seconds.</p>
+        <div class="cta-group">
+          <button class="btn-ai-primary" onclick="openChat()">
+            <i class="fa fa-robot me-2"></i>Check My Vehicle
+          </button>
+          <a href="#how-it-works" class="btn-ai-outline">
+            <i class="fa fa-circle-info me-2"></i>How it works
+          </a>
+        </div>
+        <p class="mt-4" style="font-size:.78rem;color:var(--text-muted)">
+          <i class="fa fa-lock me-1"></i>Your data is never stored &nbsp;·&nbsp;
+          <i class="fa fa-shield me-1"></i>Official DVSA recall data &nbsp;·&nbsp;
+          <i class="fa fa-star me-1"></i>Free to use
+        </p>
+      </div>
+      <div class="col-lg-5 d-none d-lg-flex justify-content-center align-items-center">
+        <div style="position:relative;width:300px;height:300px">
+          <div style="width:300px;height:300px;border-radius:50%;background:conic-gradient(from 0deg,rgba(79,142,247,.2),rgba(123,94,167,.2),rgba(56,189,248,.2),rgba(79,142,247,.2));animation:spin 8s linear infinite;position:absolute;top:0;left:0"></div>
+          <div style="position:absolute;inset:30px;border-radius:50%;background:var(--bg-card);border:1px solid var(--border);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px">
+            <i class="fa fa-car-burst" style="font-size:3rem;color:var(--primary)"></i>
+            <div style="font-size:.85rem;color:var(--text-muted)">DVSA Recall Check</div>
+            <div style="font-size:.72rem;color:var(--success)"><i class="fa fa-circle-check me-1"></i>Secure &amp; Instant</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ STATS ══════════════ -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-around">
+      <div class="stat-item"><div class="num">2.4M</div><div class="lbl">Vehicles recalled 2023</div></div>
+      <div class="stat-divider d-none d-md-block"></div>
+      <div class="stat-item"><div class="num">1,847</div><div class="lbl">Active recall campaigns</div></div>
+      <div class="stat-divider d-none d-md-block"></div>
+      <div class="stat-item"><div class="num">100%</div><div class="lbl">Free repair guarantee</div></div>
+      <div class="stat-divider d-none d-md-block"></div>
+      <div class="stat-item"><div class="num">98%</div><div class="lbl">Dealer fix success rate</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ WHAT IS A RECALL ══════════════ -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">About Recalls</p>
+    <h2 class="section-title">What is a Vehicle Recall?</h2>
+    <p class="section-sub mb-5">When a safety defect is identified, manufacturers and the DVSA issue a recall to protect road users.</p>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="glass-card p-4 h-100">
+          <div class="card-icon-wrap" style="background:rgba(248,113,113,.1)"><i class="fa fa-triangle-exclamation" style="color:var(--danger)"></i></div>
+          <h5 class="fw-semibold mb-2" style="color:var(--text)">Safety Defect</h5>
+          <p style="color:var(--text-muted);font-size:.88rem">A recall is raised when a manufacturer or DVSA identifies a fault that may endanger drivers, passengers, or other road users.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="glass-card p-4 h-100">
+          <div class="card-icon-wrap" style="background:rgba(52,211,153,.1)"><i class="fa fa-wrench" style="color:var(--success)"></i></div>
+          <h5 class="fw-semibold mb-2" style="color:var(--text)">Free of Charge</h5>
+          <p style="color:var(--text-muted);font-size:.88rem">All recall repairs are completed free at an authorised dealer, regardless of age, mileage, or warranty status.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="glass-card p-4 h-100">
+          <div class="card-icon-wrap" style="background:rgba(79,142,247,.1)"><i class="fa fa-bell" style="color:var(--primary)"></i></div>
+          <h5 class="fw-semibold mb-2" style="color:var(--text)">Stay Informed</h5>
+          <p style="color:var(--text-muted);font-size:.88rem">Manufacturers must contact registered owners by law. Use this tool to independently verify — even if you've received no letter.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ HOW IT WORKS ══════════════ -->
+<section class="section" id="how-it-works" style="background:rgba(17,24,39,.5);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="container">
+    <p class="section-label">Process</p>
+    <h2 class="section-title">How to Check Your Vehicle</h2>
+    <p class="section-sub mb-5">Four simple steps via our AI assistant — takes under 2 minutes.</p>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="step-line"><div class="step-num">1</div><h5>Find Your VIN</h5><p>Your 17-character Vehicle Identification Number is on your V5C, door sill, or windscreen dashboard.</p></div>
+        <div class="step-line"><div class="step-num">2</div><h5>Enter V5C Reference</h5><p>Your V5C document reference verifies ownership and links to DVSA records.</p></div>
+        <div class="step-line"><div class="step-num">3</div><h5>Review Recall Status</h5><p>See active recalls with risk level, description, type, and recommended remedy.</p></div>
+        <div class="step-line"><div class="step-num">4</div><h5>Book a Dealer</h5><p>Enter your postcode to find the nearest authorised dealer with available slots.</p></div>
+      </div>
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <div class="glass-card p-5 text-center w-100">
+          <i class="fa fa-robot" style="font-size:3.5rem;color:var(--primary);opacity:.7"></i>
+          <p class="mt-3" style="color:var(--text-muted);font-size:.9rem">Powered by AI — instant, free, and secure</p>
+          <button class="btn-ai-primary mt-3" onclick="openChat()"><i class="fa fa-robot me-2"></i>Start Checking Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ RECENT RECALLS ══════════════ -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Latest Data</p>
+    <h2 class="section-title">Recent UK Recalls</h2>
+    <p class="section-sub mb-5">Sample of active and recently resolved recalls from DVSA data.</p>
+    <div class="table-responsive">
+      <table class="ai-table">
+        <thead><tr><th>Make / Model</th><th>Year</th><th>Issue</th><th>Risk</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Ford Focus</strong></td><td style="color:var(--text-muted)">2019–2022</td><td>Fuel pump failure</td><td><span class="badge-risk risk-HIGH">High</span></td><td><span class="badge-risk" style="background:rgba(251,146,60,.12);color:var(--warning);border:1px solid rgba(251,146,60,.25)">Active</span></td></tr>
+          <tr><td><strong>Vauxhall Corsa</strong></td><td style="color:var(--text-muted)">2020–2023</td><td>Airbag sensor fault</td><td><span class="badge-risk risk-HIGH">High</span></td><td><span class="badge-risk" style="background:rgba(251,146,60,.12);color:var(--warning);border:1px solid rgba(251,146,60,.25)">Active</span></td></tr>
+          <tr><td><strong>BMW 3 Series</strong></td><td style="color:var(--text-muted)">2018–2021</td><td>Brake fluid contamination</td><td><span class="badge-risk risk-MEDIUM">Medium</span></td><td><span class="badge-risk" style="background:rgba(251,146,60,.12);color:var(--warning);border:1px solid rgba(251,146,60,.25)">Active</span></td></tr>
+          <tr><td><strong>Toyota Yaris</strong></td><td style="color:var(--text-muted)">2021–2023</td><td>Seatbelt pretensioner</td><td><span class="badge-risk risk-HIGH">High</span></td><td><span class="badge-risk" style="background:rgba(52,211,153,.12);color:var(--success);border:1px solid rgba(52,211,153,.25)">Resolved</span></td></tr>
+          <tr><td><strong>Volkswagen Golf</strong></td><td style="color:var(--text-muted)">2017–2020</td><td>Emission control software</td><td><span class="badge-risk risk-LOW">Low</span></td><td><span class="badge-risk" style="background:rgba(251,146,60,.12);color:var(--warning);border:1px solid rgba(251,146,60,.25)">Active</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FAQ ══════════════ -->
+<section class="section" style="background:rgba(17,24,39,.5);border-top:1px solid var(--border)">
+  <div class="container">
+    <p class="section-label">Help</p>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="row justify-content-center mt-4">
+      <div class="col-lg-8">
+        <div class="accordion ai-accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq1">Where do I find my VIN number?</button></h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Your VIN is on your V5C certificate, stamped on the driver's door sill or B-pillar, and visible through the windscreen on the dashboard. It is always 17 characters.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">Is it safe to drive a recalled vehicle?</button></h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">It depends on risk level. High-risk recalls may mean you should not drive until repaired. Medium/low risk are generally safe for short journeys but should be addressed promptly.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">How long does a recall repair take?</button></h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Most repairs take 1–4 hours. Software updates can be done in under 30 minutes. Complex mechanical fixes may require overnight. The dealer will advise when booking.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">I bought the car second-hand — am I covered?</button></h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes. Recalls are tied to the vehicle VIN, not the owner. Any current owner is entitled to a free recall repair regardless of when or where the vehicle was purchased.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+    <div>
+      <div class="brand-footer"><i class="fa fa-car-burst me-2" style="color:var(--primary)"></i>RecallCheck UK</div>
+      <div class="mt-1" style="font-size:.78rem">Data sourced from DVSA &amp; SMMT. Not an official government website.</div>
+    </div>
+    <div style="font-size:.78rem">© 2024 RecallCheck UK. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- ══════════════ FAB ══════════════ -->
+<button id="chatFab" onclick="toggleChat()" title="Check your vehicle recall">
+  <i class="fa fa-comment-dots" id="fabIcon"></i>
+  <span class="fab-badge" id="fabBadge">1</span>
+</button>
+
+<!-- ══════════════ CHAT MODAL ══════════════ -->
+<div class="modal fade" id="chatModal" tabindex="-1" aria-label="DVSA Recall Assistant">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header d-flex align-items-center gap-3">
+        <div class="chat-avatar"><i class="fa fa-robot"></i></div>
+        <div>
+          <p class="chat-title">DVSA Recall Assistant</p>
+          <span class="chat-status"><span class="dot">●</span> Online — replies instantly</span>
+        </div>
+        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="chatBody"></div>
+      <div class="modal-footer">
+        <div class="input-group w-100">
+          <input type="text" id="chatInput" class="form-control" placeholder="Type your message…" onkeydown="handleKey(event)">
+          <button class="btn-send" onclick="handleSend()"><i class="fa fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

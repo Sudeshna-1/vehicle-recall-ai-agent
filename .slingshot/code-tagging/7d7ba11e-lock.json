@@ -1,0 +1,1063 @@
+{
+  "README.md": {
+    "filename": "README.md",
+    "path": "README.md",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "0ed0de": {
+        "user": "You",
+        "model": "gpt-4o",
+        "timestamp": 1780438354,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.5.2",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "2eae57a5",
+          "files": "c198b112"
+        },
+        "hash": "c2246796",
+        "messageId": "system_771f57a0-5ecf-11f1-9bf5-4b3bf2742bfb",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4o\n- **timestamp**: 6/3/2026, 3:42:34 AM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "0ed0de",
+        "hash": "bce374fa",
+        "encoded": "#%20%F0%9F%9A%97%20UK%20Vehicle%20Recall%20Checker",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "0ed0de",
+        "hash": "15daa7d7",
+        "encoded": "An%20AI-powered%20chatbot%20application%20that%20helps%20UK%20vehicle%20owners%20check%20for%20active%20safety%20recalls%20using%20their%20VIN%20and%20V5C%20numbers.%20Built%20with%20vanilla%20JavaScript,%20Bootstrap%205,%20and%20Leaflet%20maps.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "0ed0de",
+        "hash": "2b5e44b2",
+        "encoded": "!%5BUK%20Vehicle%20Recall%20Checker%5D(https://img.shields.io/badge/Status-Production%2520Ready-success)",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "0ed0de",
+        "hash": "0a34391d",
+        "encoded": "!%5BLicense%5D(https://img.shields.io/badge/License-MIT-blue)",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "0ed0de",
+        "hash": "26075308",
+        "encoded": "!%5BHTML5%5D(https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "0ed0de",
+        "hash": "58520488",
+        "encoded": "!%5BCSS3%5D(https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "0ed0de",
+        "hash": "d3ee5d6e",
+        "encoded": "!%5BJavaScript%5D(https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "0ed0de",
+        "hash": "a08ee3d1",
+        "encoded": "##%20%E2%9C%A8%20Features",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "0ed0de",
+        "hash": "d663156c",
+        "encoded": "-%20%F0%9F%A4%96%20**AI-Powered%20Chatbot%20Interface**%20-%20Conversational%20flow%20for%20vehicle%20recall%20checking",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "0ed0de",
+        "hash": "33a40e2c",
+        "encoded": "-%20%F0%9F%94%8D%20**VIN%20Validation**%20-%20Real-time%20validation%20of%2017-character%20Vehicle%20Identification%20Numbers",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "0ed0de",
+        "hash": "4c6e4446",
+        "encoded": "-%20%F0%9F%93%8B%20**V5C%20Verification**%20-%20Ownership%20verification%20using%20V5C%20document%20reference",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "0ed0de",
+        "hash": "85c85192",
+        "encoded": "-%20%F0%9F%97%BA%EF%B8%8F%20**Interactive%20Dealer%20Map**%20-%20Leaflet-powered%20map%20showing%20nearest%20authorized%20dealers",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "0ed0de",
+        "hash": "e797dc5e",
+        "encoded": "-%20%F0%9F%93%85%20**Appointment%20Booking**%20-%20Complete%20booking%20flow%20with%20calendar%20and%20time%20slot%20selection",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "0ed0de",
+        "hash": "51e8609c",
+        "encoded": "-%20%F0%9F%94%90%20**OTP%20Verification**%20-%20Secure%20email-based%20one-time%20password%20verification",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "0ed0de",
+        "hash": "39dc704d",
+        "encoded": "-%20%F0%9F%8E%A8%20**5%20Theme%20Options**%20-%20Dark%20Blue%20(default),%20Purple,%20Emerald,%20Amber,%20and%20Light%20themes",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "0ed0de",
+        "hash": "aad77d40",
+        "encoded": "-%20%F0%9F%93%B1%20**Fully%20Responsive**%20-%20Mobile-first%20design%20with%20Bootstrap%205",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "0ed0de",
+        "hash": "8dd51627",
+        "encoded": "-%20%E2%9A%A1%20**Zero%20Dependencies**%20-%20No%20build%20process%20required,%20pure%20static%20files",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "0ed0de",
+        "hash": "f721ffa7",
+        "encoded": "-%20%F0%9F%94%92%20**Privacy-Focused**%20-%20Data%20masking%20and%20encryption%20indicators",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "0ed0de",
+        "hash": "c3d2db3f",
+        "encoded": "##%20%F0%9F%9A%80%20Quick%20Start",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "0ed0de",
+        "hash": "4a6a4c56",
+        "encoded": "###%20Local%20Development",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "0ed0de",
+        "hash": "075fcb7a",
+        "encoded": "1.%20**Clone%20or%20download**%20this%20repository",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "0ed0de",
+        "hash": "7be96d77",
+        "encoded": "2.%20**Open%20%60index.html%60**%20in%20your%20browser",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "0ed0de",
+        "hash": "0810a72f",
+        "encoded": "3.%20**Start%20testing**%20with%20sample%20VINs:",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "0ed0de",
+        "hash": "9e0e5c44",
+        "encoded": "-%20%60WBA3A5G59DNP26082%60%20(BMW%203%20Series)",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "0ed0de",
+        "hash": "e68f8d01",
+        "encoded": "-%20%601HGCM82633A123456%60%20(Ford%20Focus)",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "0ed0de",
+        "hash": "4d3e7bff",
+        "encoded": "-%20%60WVWZZZ1JZ3W386752%60%20(VW%20Golf)",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "0ed0de",
+        "hash": "97b5c141",
+        "encoded": "-%20%60SAJWA0ES5DMS50268%60%20(Jaguar%20XF)",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "0ed0de",
+        "hash": "5a50b47a",
+        "encoded": "###%20Live%20Server%20(Recommended)",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "0ed0de",
+        "hash": "591a71c1",
+        "encoded": "For%20better%20development%20experience:",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "0ed0de",
+        "hash": "41544711",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "0ed0de",
+        "hash": "8279c4f4",
+        "encoded": "#%20Using%20Python",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "0ed0de",
+        "hash": "422adb50",
+        "encoded": "python%20-m%20http.server%208000",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "0ed0de",
+        "hash": "a52c1621",
+        "encoded": "#%20Using%20Node.js",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "0ed0de",
+        "hash": "ae55caac",
+        "encoded": "npx%20http-server%20-p%208000",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "0ed0de",
+        "hash": "09c927d9",
+        "encoded": "#%20Using%20PHP",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "0ed0de",
+        "hash": "8600eb63",
+        "encoded": "php%20-S%20localhost:8000",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "0ed0de",
+        "hash": "6770b6ad",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "0ed0de",
+        "hash": "3b579618",
+        "encoded": "Then%20visit%20%60http://localhost:8000%60",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "0ed0de",
+        "hash": "7d45a5fe",
+        "encoded": "##%20%F0%9F%93%A6%20Deployment",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "0ed0de",
+        "hash": "ce2f9698",
+        "encoded": "This%20application%20is%20ready%20to%20deploy%20to%20any%20static%20hosting%20platform.%20See%20**%5BDEPLOYMENT.md%5D(DEPLOYMENT.md)**%20for%20detailed%20instructions.",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "0ed0de",
+        "hash": "532b76de",
+        "encoded": "###%20Quick%20Deploy%20Options:",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "0ed0de",
+        "hash": "a0f57c31",
+        "encoded": "####%20Netlify%20(Easiest)",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "0ed0de",
+        "hash": "e3c4d607",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "0ed0de",
+        "hash": "f404a529",
+        "encoded": "npm%20install%20-g%20netlify-cli",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "0ed0de",
+        "hash": "1dc647e5",
+        "encoded": "netlify%20login",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "0ed0de",
+        "hash": "fcd869f9",
+        "encoded": "netlify%20deploy%20--prod",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "0ed0de",
+        "hash": "666504fe",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "0ed0de",
+        "hash": "7e4154f5",
+        "encoded": "####%20Vercel",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "0ed0de",
+        "hash": "a9bc0f1e",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "0ed0de",
+        "hash": "bb13df8e",
+        "encoded": "npm%20install%20-g%20vercel",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "0ed0de",
+        "hash": "fa9a4662",
+        "encoded": "vercel%20--prod",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "0ed0de",
+        "hash": "19eee76e",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "0ed0de",
+        "hash": "d084d61d",
+        "encoded": "####%20Firebase",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "0ed0de",
+        "hash": "01ba0c27",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "0ed0de",
+        "hash": "25e32b72",
+        "encoded": "npm%20install%20-g%20firebase-tools",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "0ed0de",
+        "hash": "dda8e0f6",
+        "encoded": "firebase%20login",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "0ed0de",
+        "hash": "69003b00",
+        "encoded": "firebase%20deploy%20--only%20hosting",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "0ed0de",
+        "hash": "930da210",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "0ed0de",
+        "hash": "8858c595",
+        "encoded": "####%20GitHub%20Pages",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "0ed0de",
+        "hash": "9357dff8",
+        "encoded": "1.%20Push%20to%20GitHub",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "0ed0de",
+        "hash": "051a9bf8",
+        "encoded": "2.%20Go%20to%20Settings%20%E2%86%92%20Pages",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "0ed0de",
+        "hash": "fc288a15",
+        "encoded": "3.%20Select%20main%20branch",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "0ed0de",
+        "hash": "6d85ea3c",
+        "encoded": "4.%20Save",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "0ed0de",
+        "hash": "f1171f61",
+        "encoded": "##%20%F0%9F%8F%AD%20Project%20Structure",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "0ed0de",
+        "hash": "42c44123",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "0ed0de",
+        "hash": "f3455422",
+        "encoded": "uk-vehicle-recall-checker/",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "0ed0de",
+        "hash": "f55dbe07",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20index.html%20%20%20%20%20%20%20%20%20%20#%20Main%20HTML%20file",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "0ed0de",
+        "hash": "bba501e4",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20styles.css%20%20%20%20%20%20%20%20%20%20#%20All%20styles%20including%20themes",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "0ed0de",
+        "hash": "f38d6907",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20app.js%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Application%20logic%20and%20chatbot%20flow",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "0ed0de",
+        "hash": "3d91c25f",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20netlify.toml%20%20%20%20%20%20%20%20#%20Netlify%20configuration",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "0ed0de",
+        "hash": "83e8e0a9",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20vercel.json%20%20%20%20%20%20%20%20%20#%20Vercel%20configuration",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "0ed0de",
+        "hash": "5987ee49",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20firebase.json%20%20%20%20%20%20%20#%20Firebase%20configuration",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "0ed0de",
+        "hash": "704377a5",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20.firebaserc%20%20%20%20%20%20%20%20%20#%20Firebase%20project%20settings",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "0ed0de",
+        "hash": "6fe61474",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20.gitignore%20%20%20%20%20%20%20%20%20%20#%20Git%20ignore%20rules",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "0ed0de",
+        "hash": "c5d94897",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20package.json%20%20%20%20%20%20%20%20#%20NPM%20package%20configuration",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "0ed0de",
+        "hash": "455ac8ae",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20README.md%20%20%20%20%20%20%20%20%20%20%20#%20This%20file",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "0ed0de",
+        "hash": "462e95ba",
+        "encoded": "%E2%94%94%E2%94%80%E2%94%80%20DEPLOYMENT.md%20%20%20%20%20%20%20#%20Comprehensive%20deployment%20guide",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "0ed0de",
+        "hash": "dcb64610",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "0ed0de",
+        "hash": "20c37642",
+        "encoded": "##%20%F0%9F%8E%AF%20How%20It%20Works",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "0ed0de",
+        "hash": "c51b535b",
+        "encoded": "1.%20**VIN%20Entry**%20-%20User%20enters%20their%2017-character%20VIN",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "0ed0de",
+        "hash": "36a7b779",
+        "encoded": "2.%20**Database%20Check**%20-%20System%20validates%20VIN%20format%20and%20checks%20DVSA%20records",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "0ed0de",
+        "hash": "c266e880",
+        "encoded": "3.%20**V5C%20Verification**%20-%20User%20provides%20V5C%20document%20reference%20for%20ownership%20proof",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "0ed0de",
+        "hash": "f12716d6",
+        "encoded": "4.%20**Recall%20Display**%20-%20If%20active%20recall%20found,%20shows%20details%20with%20risk%20level",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "0ed0de",
+        "hash": "28bc8e10",
+        "encoded": "5.%20**Dealer%20Search**%20-%20User%20enters%20postcode%20to%20find%20nearest%20authorized%20dealers",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "0ed0de",
+        "hash": "79ee2e2c",
+        "encoded": "6.%20**Booking%20Flow**%20-%20Complete%20appointment%20booking%20with%20OTP%20verification",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "0ed0de",
+        "hash": "7f1eb3f2",
+        "encoded": "7.%20**Confirmation**%20-%20Email%20confirmation%20with%20booking%20reference%20and%20recall%20details",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "0ed0de",
+        "hash": "2a96ca49",
+        "encoded": "##%20%F0%9F%8E%A8%20Theme%20Customization",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "0ed0de",
+        "hash": "f42e1cd6",
+        "encoded": "The%20application%20includes%205%20pre-built%20themes:",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "0ed0de",
+        "hash": "ad79d410",
+        "encoded": "-%20**Dark%20Blue**%20(Default)%20-%20Professional%20blue%20gradient",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "0ed0de",
+        "hash": "6bfae983",
+        "encoded": "-%20**Purple**%20-%20Vibrant%20purple%20and%20pink",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "0ed0de",
+        "hash": "8e3c744b",
+        "encoded": "-%20**Emerald**%20-%20Fresh%20green%20tones",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "0ed0de",
+        "hash": "2084e1a5",
+        "encoded": "-%20**Amber**%20-%20Warm%20orange%20and%20red",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "0ed0de",
+        "hash": "09266ac9",
+        "encoded": "-%20**Light**%20-%20Clean%20light%20mode",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "0ed0de",
+        "hash": "23186591",
+        "encoded": "Users%20can%20switch%20themes%20via%20the%20navbar%20theme%20switcher.",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "0ed0de",
+        "hash": "165ae38d",
+        "encoded": "##%20%F0%9F%94%A7%20Configuration",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "0ed0de",
+        "hash": "5bc99324",
+        "encoded": "###%20Mock%20Data",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "0ed0de",
+        "hash": "df8ff4b1",
+        "encoded": "The%20application%20uses%20mock%20data%20for%20demonstration.%20To%20integrate%20with%20real%20DVSA%20API:",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "0ed0de",
+        "hash": "c73bc107",
+        "encoded": "1.%20Replace%20%60MOCK_VIN_API%60%20in%20%60app.js%60%20with%20actual%20API%20calls",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "0ed0de",
+        "hash": "6394328a",
+        "encoded": "2.%20Update%20%60V5C_RECORDS%60%20with%20real%20V5C%20validation",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "0ed0de",
+        "hash": "210c0dec",
+        "encoded": "3.%20Replace%20%60MOCK_DEALERS%60%20with%20real%20dealer%20database",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "0ed0de",
+        "hash": "e47c54e7",
+        "encoded": "4.%20Implement%20actual%20OTP%20email%20service",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "0ed0de",
+        "hash": "b3b19f55",
+        "encoded": "###%20API%20Integration%20Points",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "0ed0de",
+        "hash": "b2425904",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "0ed0de",
+        "hash": "8c5564f2",
+        "encoded": "//%20app.js%20-%20Replace%20these%20functions:",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "0ed0de",
+        "hash": "57f3aa2c",
+        "encoded": "//%20Line%20~220:%20mockAPICall()%20-%20VIN%20lookup",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "0ed0de",
+        "hash": "09733781",
+        "encoded": "async%20function%20mockAPICall(vin)%20%7B",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "0ed0de",
+        "hash": "0720fca4",
+        "encoded": "//%20Replace%20with:%20const%20response%20=%20await%20fetch(%60/api/vin/$%7Bvin%7D%60);",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "0ed0de",
+        "hash": "1b2fde43",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "0ed0de",
+        "hash": "9d6cc939",
+        "encoded": "//%20Line%20~340:%20showDealers()%20-%20Dealer%20search",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "0ed0de",
+        "hash": "fd551e28",
+        "encoded": "async%20function%20showDealers(postcode)%20%7B",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "0ed0de",
+        "hash": "a95e30a8",
+        "encoded": "//%20Replace%20with:%20const%20dealers%20=%20await%20fetch(%60/api/dealers?postcode=$%7Bpostcode%7D%60);",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "0ed0de",
+        "hash": "f787a6d1",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "0ed0de",
+        "hash": "73d97622",
+        "encoded": "//%20Line%20~480:%20sendOTPToEmail()%20-%20OTP%20generation",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "0ed0de",
+        "hash": "43fd51ac",
+        "encoded": "async%20function%20sendOTPToEmail(email)%20%7B",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "0ed0de",
+        "hash": "bfa5c908",
+        "encoded": "//%20Replace%20with:%20await%20fetch('/api/send-otp',%20%7B%20method:%20'POST',%20body:%20JSON.stringify(%7B%20email%20%7D)%20%7D);",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "0ed0de",
+        "hash": "bbf48fdf",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "0ed0de",
+        "hash": "95e4a90e",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "0ed0de",
+        "hash": "d817a04f",
+        "encoded": "##%20%F0%9F%93%8A%20Browser%20Support",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "0ed0de",
+        "hash": "a5de8850",
+        "encoded": "-%20%E2%9C%85%20Chrome%2090+",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "0ed0de",
+        "hash": "9940e29f",
+        "encoded": "-%20%E2%9C%85%20Firefox%2088+",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "0ed0de",
+        "hash": "4d9053e3",
+        "encoded": "-%20%E2%9C%85%20Safari%2014+",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "0ed0de",
+        "hash": "0acead7c",
+        "encoded": "-%20%E2%9C%85%20Edge%2090+",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "0ed0de",
+        "hash": "e2b9b0ff",
+        "encoded": "-%20%E2%9C%85%20Mobile%20browsers%20(iOS%20Safari,%20Chrome%20Mobile)",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "0ed0de",
+        "hash": "e0d45922",
+        "encoded": "##%20%F0%9F%94%92%20Security%20Features",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "0ed0de",
+        "hash": "10b3459b",
+        "encoded": "-%20%E2%9C%85%20Content%20Security%20Policy%20headers",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "0ed0de",
+        "hash": "eb177bbc",
+        "encoded": "-%20%E2%9C%85%20XSS%20protection",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "0ed0de",
+        "hash": "007d85c0",
+        "encoded": "-%20%E2%9C%85%20HTTPS%20enforcement%20(on%20hosting%20platforms)",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "0ed0de",
+        "hash": "13e22ed6",
+        "encoded": "-%20%E2%9C%85%20Data%20masking%20for%20sensitive%20information",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "0ed0de",
+        "hash": "3dc4c96a",
+        "encoded": "-%20%E2%9C%85%20Input%20validation%20and%20sanitization",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "0ed0de",
+        "hash": "db9d5c47",
+        "encoded": "-%20%E2%9C%85%20No%20data%20storage%20(privacy-first)",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "0ed0de",
+        "hash": "94d2e77d",
+        "encoded": "##%20%F0%9F%93%B1%20Responsive%20Design",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "0ed0de",
+        "hash": "a4857ae3",
+        "encoded": "-%20Mobile-first%20approach",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "0ed0de",
+        "hash": "b3647587",
+        "encoded": "-%20Bootstrap%205%20grid%20system",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "0ed0de",
+        "hash": "46511c93",
+        "encoded": "-%20Optimized%20for%20screens%20from%20320px%20to%204K",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "0ed0de",
+        "hash": "c05a86c3",
+        "encoded": "-%20Touch-friendly%20interface",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "0ed0de",
+        "hash": "39e0fdb2",
+        "encoded": "-%20Adaptive%20layouts%20for%20chat%20modal",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "0ed0de",
+        "hash": "d8d01990",
+        "encoded": "##%20%F0%9F%9B%A0%EF%B8%8F%20Technologies%20Used",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "0ed0de",
+        "hash": "f5e058ad",
+        "encoded": "-%20**HTML5**%20-%20Semantic%20markup",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "0ed0de",
+        "hash": "674b05e8",
+        "encoded": "-%20**CSS3**%20-%20Custom%20properties,%20gradients,%20animations",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "0ed0de",
+        "hash": "29e8d5ee",
+        "encoded": "-%20**JavaScript%20(ES6+)**%20-%20Async/await,%20modules,%20modern%20syntax",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "0ed0de",
+        "hash": "77648a75",
+        "encoded": "-%20**Bootstrap%205.3**%20-%20Grid,%20modals,%20utilities",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "0ed0de",
+        "hash": "aa90da28",
+        "encoded": "-%20**Font%20Awesome%206.4**%20-%20Icons",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "0ed0de",
+        "hash": "2a6838d7",
+        "encoded": "-%20**Leaflet%201.9.4**%20-%20Interactive%20maps",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "0ed0de",
+        "hash": "70d03bcd",
+        "encoded": "##%20%F0%9F%93%88%20Performance",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "0ed0de",
+        "hash": "b5d2871f",
+        "encoded": "-%20%E2%9A%A1%20Lighthouse%20Score:%2095+",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "0ed0de",
+        "hash": "e18737ce",
+        "encoded": "-%20%F0%9F%93%A6%20Total%20Size:%20~50KB%20(excluding%20CDN%20resources)",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "0ed0de",
+        "hash": "0ca3ad2b",
+        "encoded": "-%20%F0%9F%9A%80%20First%20Contentful%20Paint:%20%3C%201s",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "0ed0de",
+        "hash": "3ff08d40",
+        "encoded": "-%20%F0%9F%8E%AF%20Time%20to%20Interactive:%20%3C%202s",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "0ed0de",
+        "hash": "e1b6c6b1",
+        "encoded": "##%20%F0%9F%A4%9D%20Contributing",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "0ed0de",
+        "hash": "3c9d03c3",
+        "encoded": "Contributions%20are%20welcome!%20Please%20follow%20these%20steps:",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "0ed0de",
+        "hash": "bb946e8e",
+        "encoded": "1.%20Fork%20the%20repository",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "0ed0de",
+        "hash": "2ec84ee7",
+        "encoded": "2.%20Create%20a%20feature%20branch%20(%60git%20checkout%20-b%20feature/amazing-feature%60)",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "0ed0de",
+        "hash": "c16107f6",
+        "encoded": "3.%20Commit%20your%20changes%20(%60git%20commit%20-m%20'Add%20amazing%20feature'%60)",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "0ed0de",
+        "hash": "82cce15c",
+        "encoded": "4.%20Push%20to%20the%20branch%20(%60git%20push%20origin%20feature/amazing-feature%60)",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "0ed0de",
+        "hash": "8f7b78b2",
+        "encoded": "5.%20Open%20a%20Pull%20Request",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "0ed0de",
+        "hash": "5956197a",
+        "encoded": "##%20%F0%9F%93%9D%20License",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "0ed0de",
+        "hash": "c005012c",
+        "encoded": "This%20project%20is%20licensed%20under%20the%20MIT%20License%20-%20see%20the%20LICENSE%20file%20for%20details.",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "0ed0de",
+        "hash": "dd454d96",
+        "encoded": "##%20%F0%9F%99%8F%20Acknowledgments",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "0ed0de",
+        "hash": "0e4fdf0d",
+        "encoded": "-%20DVSA%20for%20recall%20data%20standards",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "0ed0de",
+        "hash": "32ba2ce7",
+        "encoded": "-%20Bootstrap%20team%20for%20the%20framework",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "0ed0de",
+        "hash": "304afaa5",
+        "encoded": "-%20Leaflet%20for%20mapping%20library",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "0ed0de",
+        "hash": "1ef2b9aa",
+        "encoded": "-%20Font%20Awesome%20for%20icons",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "0ed0de",
+        "hash": "efa27f3c",
+        "encoded": "-%20Unsplash%20for%20vehicle%20images",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "0ed0de",
+        "hash": "d5c33dc8",
+        "encoded": "##%20%F0%9F%93%9E%20Support",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "0ed0de",
+        "hash": "6d70ddce",
+        "encoded": "For%20issues,%20questions,%20or%20suggestions:",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "0ed0de",
+        "hash": "a67ccb02",
+        "encoded": "-%20%F0%9F%90%9B%20%5BReport%20a%20bug%5D(https://github.com/YOUR_USERNAME/uk-recall-checker/issues)",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "0ed0de",
+        "hash": "c5abd300",
+        "encoded": "-%20%F0%9F%92%A1%20%5BRequest%20a%20feature%5D(https://github.com/YOUR_USERNAME/uk-recall-checker/issues)",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "0ed0de",
+        "hash": "368d7f8c",
+        "encoded": "-%20%F0%9F%93%A7%20Email:%20support@example.com",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "0ed0de",
+        "hash": "f71129e9",
+        "encoded": "##%20%F0%9F%8E%89%20Demo",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "0ed0de",
+        "hash": "b0c0e1fb",
+        "encoded": "**Live%20Demo**:%20%5Bhttps://uk-recall-checker.netlify.app%5D(https://uk-recall-checker.netlify.app)%20*(Update%20with%20your%20actual%20URL)*",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "0ed0de",
+        "hash": "bb9819a6",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "0ed0de",
+        "hash": "dd658518",
+        "encoded": "**Made%20with%20%E2%9D%A4%EF%B8%8F%20for%20UK%20vehicle%20safety**",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

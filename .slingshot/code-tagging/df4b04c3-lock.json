@@ -1,0 +1,1657 @@
+{
+  "DEPLOYMENT.md": {
+    "filename": "DEPLOYMENT.md",
+    "path": "DEPLOYMENT.md",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "ca8f1b": {
+        "user": "You",
+        "model": "gpt-4o",
+        "timestamp": 1780438296,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.5.2",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "2eae57a5",
+          "files": "c198b112"
+        },
+        "hash": "e11fbf42",
+        "messageId": "system_771f57a0-5ecf-11f1-9bf5-4b3bf2742bfb",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4o\n- **timestamp**: 6/3/2026, 3:41:36 AM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "ca8f1b",
+        "hash": "4ab70c54",
+        "encoded": "#%20UK%20Vehicle%20Recall%20Checker%20-%20Deployment%20Guide",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "ca8f1b",
+        "hash": "8b8e38ca",
+        "encoded": "This%20guide%20provides%20step-by-step%20instructions%20for%20deploying%20your%20chatbot%20application%20to%20various%20cloud%20platforms.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "ca8f1b",
+        "hash": "0508678c",
+        "encoded": "##%20%F0%9F%93%8B%20Table%20of%20Contents",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "ca8f1b",
+        "hash": "b5e673e4",
+        "encoded": "1.%20%5BNetlify%20Deployment%5D(#netlify-deployment-recommended)",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "ca8f1b",
+        "hash": "5a268993",
+        "encoded": "2.%20%5BVercel%20Deployment%5D(#vercel-deployment)",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "ca8f1b",
+        "hash": "15564448",
+        "encoded": "3.%20%5BFirebase%20Hosting%5D(#firebase-hosting)",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "ca8f1b",
+        "hash": "3566427e",
+        "encoded": "4.%20%5BGitHub%20Pages%5D(#github-pages)",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "ca8f1b",
+        "hash": "e5147c7f",
+        "encoded": "5.%20%5BAWS%20S3%20+%20CloudFront%5D(#aws-s3--cloudfront)",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "ca8f1b",
+        "hash": "c1f467f5",
+        "encoded": "6.%20%5BAzure%20Static%20Web%20Apps%5D(#azure-static-web-apps)",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "ca8f1b",
+        "hash": "c7d2bd71",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "ca8f1b",
+        "hash": "ee6baf0c",
+        "encoded": "##%20%F0%9F%9A%80%20Netlify%20Deployment%20(Recommended)",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "ca8f1b",
+        "hash": "e670dace",
+        "encoded": "**Fastest%20and%20easiest%20option%20with%20automatic%20HTTPS**",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "ca8f1b",
+        "hash": "1b9c0c00",
+        "encoded": "###%20Method%201:%20Drag%20&%20Drop%20(No%20Git%20Required)",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "ca8f1b",
+        "hash": "0695cb7d",
+        "encoded": "1.%20**Visit%20Netlify**:%20Go%20to%20%5Bhttps://app.netlify.com/drop%5D(https://app.netlify.com/drop)",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "ca8f1b",
+        "hash": "a8d91d5b",
+        "encoded": "2.%20**Drag%20Your%20Folder**:%20Drag%20your%20entire%20project%20folder%20into%20the%20browser%20window",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "ca8f1b",
+        "hash": "27813e08",
+        "encoded": "3.%20**Done!**%20Your%20site%20will%20be%20live%20in%20seconds%20at%20a%20URL%20like%20%60https://random-name.netlify.app%60",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "ca8f1b",
+        "hash": "5f21f749",
+        "encoded": "###%20Method%202:%20GitHub%20Integration%20(Recommended%20for%20Updates)",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "ca8f1b",
+        "hash": "3eb3e8f0",
+        "encoded": "1.%20**Create%20GitHub%20Repository**:",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "ca8f1b",
+        "hash": "e08c12ef",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "ca8f1b",
+        "hash": "8f85787b",
+        "encoded": "git%20init",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "ca8f1b",
+        "hash": "71635a0f",
+        "encoded": "git%20add%20.",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "ca8f1b",
+        "hash": "a7d674fa",
+        "encoded": "git%20commit%20-m%20%22Initial%20commit%22",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "ca8f1b",
+        "hash": "8e5241c0",
+        "encoded": "git%20branch%20-M%20main",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "ca8f1b",
+        "hash": "60536194",
+        "encoded": "git%20remote%20add%20origin%20https://github.com/YOUR_USERNAME/uk-recall-checker.git",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "ca8f1b",
+        "hash": "4c9c2677",
+        "encoded": "git%20push%20-u%20origin%20main",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "ca8f1b",
+        "hash": "a355a5c4",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "ca8f1b",
+        "hash": "34435267",
+        "encoded": "2.%20**Connect%20to%20Netlify**:",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "ca8f1b",
+        "hash": "a5b13c8e",
+        "encoded": "-%20Go%20to%20%5Bhttps://app.netlify.com%5D(https://app.netlify.com)",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "ca8f1b",
+        "hash": "73f5e5db",
+        "encoded": "-%20Click%20%22Add%20new%20site%22%20%E2%86%92%20%22Import%20an%20existing%20project%22",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "ca8f1b",
+        "hash": "76b299c0",
+        "encoded": "-%20Choose%20%22GitHub%22%20and%20authorize%20Netlify",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "ca8f1b",
+        "hash": "7037a503",
+        "encoded": "-%20Select%20your%20repository",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "ca8f1b",
+        "hash": "9ea5b107",
+        "encoded": "-%20Build%20settings:",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "ca8f1b",
+        "hash": "9cbc52e4",
+        "encoded": "-%20**Build%20command**:%20Leave%20empty%20(static%20site)",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "ca8f1b",
+        "hash": "1cd2643d",
+        "encoded": "-%20**Publish%20directory**:%20%60.%60%20(current%20directory)",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "ca8f1b",
+        "hash": "c45a7512",
+        "encoded": "-%20Click%20%22Deploy%20site%22",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "ca8f1b",
+        "hash": "68b7de8f",
+        "encoded": "3.%20**Custom%20Domain%20(Optional)**:",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "ca8f1b",
+        "hash": "13753bd0",
+        "encoded": "-%20Go%20to%20Site%20settings%20%E2%86%92%20Domain%20management",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "ca8f1b",
+        "hash": "df7a2c9f",
+        "encoded": "-%20Add%20your%20custom%20domain",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "ca8f1b",
+        "hash": "e201a549",
+        "encoded": "-%20Update%20DNS%20records%20as%20instructed",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "ca8f1b",
+        "hash": "33d3ff19",
+        "encoded": "###%20Method%203:%20Netlify%20CLI",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "ca8f1b",
+        "hash": "cf8047b9",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "ca8f1b",
+        "hash": "f6ff2a5f",
+        "encoded": "#%20Install%20Netlify%20CLI",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "ca8f1b",
+        "hash": "f40bbbcd",
+        "encoded": "npm%20install%20-g%20netlify-cli",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "ca8f1b",
+        "hash": "d352c273",
+        "encoded": "#%20Login%20to%20Netlify",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "ca8f1b",
+        "hash": "12fb4b6f",
+        "encoded": "netlify%20login",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "ca8f1b",
+        "hash": "47cd46ac",
+        "encoded": "#%20Deploy",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "ca8f1b",
+        "hash": "fcd869f9",
+        "encoded": "netlify%20deploy%20--prod",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "ca8f1b",
+        "hash": "666504fe",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "ca8f1b",
+        "hash": "2b38ba40",
+        "encoded": "**Your%20site%20URL**:%20%60https://your-site-name.netlify.app%60",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "ca8f1b",
+        "hash": "ef991053",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "ca8f1b",
+        "hash": "ef314c57",
+        "encoded": "##%20%E2%9A%A1%20Vercel%20Deployment",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "ca8f1b",
+        "hash": "039aa2be",
+        "encoded": "**Great%20for%20developers,%20excellent%20performance**",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "ca8f1b",
+        "hash": "7e3f668e",
+        "encoded": "###%20Method%201:%20Vercel%20CLI",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "ca8f1b",
+        "hash": "d4634994",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "ca8f1b",
+        "hash": "402977f2",
+        "encoded": "#%20Install%20Vercel%20CLI",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "ca8f1b",
+        "hash": "83242b41",
+        "encoded": "npm%20install%20-g%20vercel",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "ca8f1b",
+        "hash": "35d3ec7f",
+        "encoded": "#%20Login",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "ca8f1b",
+        "hash": "d1d4a301",
+        "encoded": "vercel%20login",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "ca8f1b",
+        "hash": "dc9b677a",
+        "encoded": "#%20Deploy",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "ca8f1b",
+        "hash": "174a7d64",
+        "encoded": "vercel%20--prod",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "ca8f1b",
+        "hash": "a9cec825",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "ca8f1b",
+        "hash": "42d2387a",
+        "encoded": "###%20Method%202:%20GitHub%20Integration",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "ca8f1b",
+        "hash": "dddc7583",
+        "encoded": "1.%20Push%20your%20code%20to%20GitHub%20(see%20Netlify%20instructions%20above)",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "ca8f1b",
+        "hash": "ff4c106f",
+        "encoded": "2.%20Go%20to%20%5Bhttps://vercel.com/new%5D(https://vercel.com/new)",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "ca8f1b",
+        "hash": "736f3106",
+        "encoded": "3.%20Import%20your%20GitHub%20repository",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "ca8f1b",
+        "hash": "59f701e2",
+        "encoded": "4.%20Click%20%22Deploy%22%20(no%20build%20configuration%20needed)",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "ca8f1b",
+        "hash": "eeec46d7",
+        "encoded": "**Your%20site%20URL**:%20%60https://your-project.vercel.app%60",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "ca8f1b",
+        "hash": "0e34c2b7",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "ca8f1b",
+        "hash": "8b9eec94",
+        "encoded": "##%20%F0%9F%94%A5%20Firebase%20Hosting",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "ca8f1b",
+        "hash": "8d695ecc",
+        "encoded": "**Google's%20hosting%20solution%20with%20CDN**",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "ca8f1b",
+        "hash": "0148d873",
+        "encoded": "###%20Prerequisites",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "ca8f1b",
+        "hash": "e98db9be",
+        "encoded": "-%20Google%20account",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "ca8f1b",
+        "hash": "45b2bd98",
+        "encoded": "-%20Node.js%20installed",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "ca8f1b",
+        "hash": "5230531f",
+        "encoded": "###%20Steps",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "ca8f1b",
+        "hash": "e1ef3577",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "ca8f1b",
+        "hash": "36df96fd",
+        "encoded": "#%20Install%20Firebase%20CLI",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "ca8f1b",
+        "hash": "63c3d669",
+        "encoded": "npm%20install%20-g%20firebase-tools",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "ca8f1b",
+        "hash": "efbb0cf8",
+        "encoded": "#%20Login%20to%20Firebase",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "ca8f1b",
+        "hash": "64a309d2",
+        "encoded": "firebase%20login",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "ca8f1b",
+        "hash": "ef6c98c3",
+        "encoded": "#%20Initialize%20Firebase%20(if%20not%20already%20done)",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "ca8f1b",
+        "hash": "1d42d558",
+        "encoded": "firebase%20init%20hosting",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "ca8f1b",
+        "hash": "f22c86b2",
+        "encoded": "#%20Select:",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "ca8f1b",
+        "hash": "65675b58",
+        "encoded": "#%20-%20Use%20an%20existing%20project%20or%20create%20new%20one",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "ca8f1b",
+        "hash": "e67cb4b6",
+        "encoded": "#%20-%20Public%20directory:%20.%20(current%20directory)",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "ca8f1b",
+        "hash": "bd95ae87",
+        "encoded": "#%20-%20Configure%20as%20single-page%20app:%20Yes",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "ca8f1b",
+        "hash": "d7688700",
+        "encoded": "#%20-%20Set%20up%20automatic%20builds:%20No",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "ca8f1b",
+        "hash": "ee788a2d",
+        "encoded": "#%20-%20Overwrite%20index.html:%20No",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "ca8f1b",
+        "hash": "702abf44",
+        "encoded": "#%20Deploy",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "ca8f1b",
+        "hash": "654b12af",
+        "encoded": "firebase%20deploy%20--only%20hosting",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "ca8f1b",
+        "hash": "248bff5f",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "ca8f1b",
+        "hash": "b463e8b3",
+        "encoded": "**Your%20site%20URL**:%20%60https://your-project-id.web.app%60",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "ca8f1b",
+        "hash": "d551940d",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "ca8f1b",
+        "hash": "3a870c51",
+        "encoded": "##%20%F0%9F%93%84%20GitHub%20Pages",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "ca8f1b",
+        "hash": "b6af9d2b",
+        "encoded": "**Free%20hosting%20directly%20from%20your%20GitHub%20repository**",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "ca8f1b",
+        "hash": "e37014e2",
+        "encoded": "###%20Steps",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "ca8f1b",
+        "hash": "bbd155f2",
+        "encoded": "1.%20**Push%20to%20GitHub**:",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "ca8f1b",
+        "hash": "c206c599",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "ca8f1b",
+        "hash": "c64d5064",
+        "encoded": "git%20init",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "ca8f1b",
+        "hash": "b8ec9732",
+        "encoded": "git%20add%20.",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "ca8f1b",
+        "hash": "9e8af97c",
+        "encoded": "git%20commit%20-m%20%22Initial%20commit%22",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "ca8f1b",
+        "hash": "f7f94fdb",
+        "encoded": "git%20branch%20-M%20main",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "ca8f1b",
+        "hash": "76259a70",
+        "encoded": "git%20remote%20add%20origin%20https://github.com/YOUR_USERNAME/uk-recall-checker.git",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "ca8f1b",
+        "hash": "e98ebe86",
+        "encoded": "git%20push%20-u%20origin%20main",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "ca8f1b",
+        "hash": "13d6cf0a",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "ca8f1b",
+        "hash": "5a21d563",
+        "encoded": "2.%20**Enable%20GitHub%20Pages**:",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "ca8f1b",
+        "hash": "8e7ee5b4",
+        "encoded": "-%20Go%20to%20your%20repository%20on%20GitHub",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "ca8f1b",
+        "hash": "845f4567",
+        "encoded": "-%20Click%20%22Settings%22%20%E2%86%92%20%22Pages%22",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "ca8f1b",
+        "hash": "b30fe5e4",
+        "encoded": "-%20Under%20%22Source%22,%20select%20%22main%22%20branch",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "ca8f1b",
+        "hash": "9eb10afe",
+        "encoded": "-%20Click%20%22Save%22",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "ca8f1b",
+        "hash": "274616ec",
+        "encoded": "3.%20**Wait%201-2%20minutes**%20for%20deployment",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "ca8f1b",
+        "hash": "25d2fc85",
+        "encoded": "**Your%20site%20URL**:%20%60https://YOUR_USERNAME.github.io/uk-recall-checker/%60",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "ca8f1b",
+        "hash": "d99bebdc",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "ca8f1b",
+        "hash": "4f34ca57",
+        "encoded": "##%20%E2%98%81%EF%B8%8F%20AWS%20S3%20+%20CloudFront",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "ca8f1b",
+        "hash": "908b2585",
+        "encoded": "**Enterprise-grade%20hosting%20with%20AWS**",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "ca8f1b",
+        "hash": "5699bc01",
+        "encoded": "###%20Prerequisites",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "ca8f1b",
+        "hash": "ad37ffbb",
+        "encoded": "-%20AWS%20account",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "ca8f1b",
+        "hash": "19f05af7",
+        "encoded": "-%20AWS%20CLI%20installed%20and%20configured",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "ca8f1b",
+        "hash": "57515ef4",
+        "encoded": "###%20Steps",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "ca8f1b",
+        "hash": "a4f2c6e3",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "ca8f1b",
+        "hash": "707d6fe9",
+        "encoded": "#%20Install%20AWS%20CLI%20(if%20not%20installed)",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "ca8f1b",
+        "hash": "d6b10dca",
+        "encoded": "#%20Visit:%20https://aws.amazon.com/cli/",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "ca8f1b",
+        "hash": "8e57a3dc",
+        "encoded": "#%20Configure%20AWS%20CLI",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "ca8f1b",
+        "hash": "3a5ad96f",
+        "encoded": "aws%20configure",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "ca8f1b",
+        "hash": "427e865c",
+        "encoded": "#%20Create%20S3%20bucket",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "ca8f1b",
+        "hash": "d5eac4cd",
+        "encoded": "aws%20s3%20mb%20s3://uk-recall-checker%20--region%20us-east-1",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "ca8f1b",
+        "hash": "156c81ca",
+        "encoded": "#%20Enable%20static%20website%20hosting",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "ca8f1b",
+        "hash": "fc972d33",
+        "encoded": "aws%20s3%20website%20s3://uk-recall-checker%20--index-document%20index.html%20--error-document%20index.html",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "ca8f1b",
+        "hash": "be324dfc",
+        "encoded": "#%20Upload%20files",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "ca8f1b",
+        "hash": "59b5b4e5",
+        "encoded": "aws%20s3%20sync%20.%20s3://uk-recall-checker%20--exclude%20%22.git/*%22%20--exclude%20%22*.md%22%20--exclude%20%22node_modules/*%22",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "ca8f1b",
+        "hash": "ec74bb71",
+        "encoded": "#%20Make%20bucket%20public",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "ca8f1b",
+        "hash": "4d485e0f",
+        "encoded": "aws%20s3api%20put-bucket-policy%20--bucket%20uk-recall-checker%20--policy%20'%7B",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "ca8f1b",
+        "hash": "7a766364",
+        "encoded": "%22Version%22:%20%222012-10-17%22,",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "ca8f1b",
+        "hash": "462cddab",
+        "encoded": "%22Statement%22:%20%5B%7B",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "ca8f1b",
+        "hash": "cd07fb86",
+        "encoded": "%22Sid%22:%20%22PublicReadGetObject%22,",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "ca8f1b",
+        "hash": "69e12ab1",
+        "encoded": "%22Effect%22:%20%22Allow%22,",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "ca8f1b",
+        "hash": "928cf0d7",
+        "encoded": "%22Principal%22:%20%22*%22,",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "ca8f1b",
+        "hash": "64537bd3",
+        "encoded": "%22Action%22:%20%22s3:GetObject%22,",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "ca8f1b",
+        "hash": "83c76cc2",
+        "encoded": "%22Resource%22:%20%22arn:aws:s3:::uk-recall-checker/*%22",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "ca8f1b",
+        "hash": "1e05c2f8",
+        "encoded": "%7D%5D",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "ca8f1b",
+        "hash": "a5d713da",
+        "encoded": "%7D'",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "ca8f1b",
+        "hash": "8f6cc481",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "ca8f1b",
+        "hash": "124b677e",
+        "encoded": "###%20Optional:%20CloudFront%20CDN%20Setup",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "ca8f1b",
+        "hash": "467b9160",
+        "encoded": "1.%20Go%20to%20AWS%20CloudFront%20console",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "ca8f1b",
+        "hash": "702d18de",
+        "encoded": "2.%20Create%20distribution",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "ca8f1b",
+        "hash": "9316a446",
+        "encoded": "3.%20Origin%20domain:%20Select%20your%20S3%20bucket",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "ca8f1b",
+        "hash": "823d6242",
+        "encoded": "4.%20Default%20root%20object:%20%60index.html%60",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "ca8f1b",
+        "hash": "67abe150",
+        "encoded": "5.%20Create%20distribution",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "ca8f1b",
+        "hash": "c7f5d191",
+        "encoded": "**Your%20site%20URL**:%20%60http://uk-recall-checker.s3-website-us-east-1.amazonaws.com%60",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "ca8f1b",
+        "hash": "700c03bc",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "ca8f1b",
+        "hash": "c2648165",
+        "encoded": "##%20%F0%9F%8C%90%20Azure%20Static%20Web%20Apps",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "ca8f1b",
+        "hash": "2e092f9e",
+        "encoded": "**Microsoft's%20static%20hosting%20solution**",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "ca8f1b",
+        "hash": "6e3d1a5c",
+        "encoded": "###%20Method%201:%20Azure%20Portal",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "ca8f1b",
+        "hash": "bfe6b3ff",
+        "encoded": "1.%20Go%20to%20%5BAzure%20Portal%5D(https://portal.azure.com)",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "ca8f1b",
+        "hash": "80563689",
+        "encoded": "2.%20Create%20new%20%22Static%20Web%20App%22",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "ca8f1b",
+        "hash": "5562be41",
+        "encoded": "3.%20Connect%20to%20GitHub%20repository",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "ca8f1b",
+        "hash": "07c12d1c",
+        "encoded": "4.%20Build%20configuration:",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "ca8f1b",
+        "hash": "e8da8f04",
+        "encoded": "-%20App%20location:%20%60/%60",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "ca8f1b",
+        "hash": "b812aed0",
+        "encoded": "-%20Output%20location:%20%60.%60",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "ca8f1b",
+        "hash": "753b4e1a",
+        "encoded": "5.%20Review%20and%20create",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "ca8f1b",
+        "hash": "78e621d1",
+        "encoded": "###%20Method%202:%20Azure%20CLI",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "ca8f1b",
+        "hash": "82004b21",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "ca8f1b",
+        "hash": "185d09dc",
+        "encoded": "#%20Install%20Azure%20CLI",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "ca8f1b",
+        "hash": "0ef93c17",
+        "encoded": "#%20Visit:%20https://docs.microsoft.com/en-us/cli/azure/install-azure-cli",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "ca8f1b",
+        "hash": "9f411e35",
+        "encoded": "#%20Login",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "ca8f1b",
+        "hash": "4cab289a",
+        "encoded": "az%20login",
+        "prevChunkIds": []
+      },
+      "233": {
+        "chunkId": "ca8f1b",
+        "hash": "2c89acd0",
+        "encoded": "#%20Create%20resource%20group",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "ca8f1b",
+        "hash": "aeded02c",
+        "encoded": "az%20group%20create%20--name%20uk-recall-rg%20--location%20eastus",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "ca8f1b",
+        "hash": "20c0c0fc",
+        "encoded": "#%20Create%20static%20web%20app",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "ca8f1b",
+        "hash": "ca1ebc11",
+        "encoded": "az%20staticwebapp%20create%20%5C",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "ca8f1b",
+        "hash": "7eff74a1",
+        "encoded": "--name%20uk-recall-checker%20%5C",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "ca8f1b",
+        "hash": "02663ff5",
+        "encoded": "--resource-group%20uk-recall-rg%20%5C",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "ca8f1b",
+        "hash": "587dfadd",
+        "encoded": "--source%20https://github.com/YOUR_USERNAME/uk-recall-checker%20%5C",
+        "prevChunkIds": []
+      },
+      "241": {
+        "chunkId": "ca8f1b",
+        "hash": "af85382b",
+        "encoded": "--location%20eastus%20%5C",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "ca8f1b",
+        "hash": "4ba3d001",
+        "encoded": "--branch%20main%20%5C",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "ca8f1b",
+        "hash": "cf752c3b",
+        "encoded": "--app-location%20%22/%22%20%5C",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "ca8f1b",
+        "hash": "95450bca",
+        "encoded": "--output-location%20%22.%22",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "ca8f1b",
+        "hash": "a2a3c0f4",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "ca8f1b",
+        "hash": "addaf916",
+        "encoded": "**Your%20site%20URL**:%20%60https://uk-recall-checker.azurestaticapps.net%60",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "ca8f1b",
+        "hash": "c0acfb46",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "ca8f1b",
+        "hash": "1d22877c",
+        "encoded": "##%20%F0%9F%94%A7%20Quick%20Deployment%20Script",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "ca8f1b",
+        "hash": "9c2c21bf",
+        "encoded": "Create%20a%20file%20%60deploy.sh%60%20for%20easy%20deployment:",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "ca8f1b",
+        "hash": "34f14a5d",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "ca8f1b",
+        "hash": "e517939e",
+        "encoded": "#!/bin/bash",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "ca8f1b",
+        "hash": "b332e215",
+        "encoded": "echo%20%22%F0%9F%9A%80%20UK%20Vehicle%20Recall%20Checker%20-%20Quick%20Deploy%22",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "ca8f1b",
+        "hash": "af97f81b",
+        "encoded": "echo%20%22%22",
+        "prevChunkIds": []
+      },
+      "260": {
+        "chunkId": "ca8f1b",
+        "hash": "ee6a44f4",
+        "encoded": "echo%20%22Select%20deployment%20platform:%22",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "ca8f1b",
+        "hash": "3e7c584c",
+        "encoded": "echo%20%221)%20Netlify%22",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "ca8f1b",
+        "hash": "ba0dc0f2",
+        "encoded": "echo%20%222)%20Vercel%22",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "ca8f1b",
+        "hash": "bedef897",
+        "encoded": "echo%20%223)%20Firebase%22",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "ca8f1b",
+        "hash": "0d37f1bb",
+        "encoded": "echo%20%224)%20GitHub%20Pages%22",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "ca8f1b",
+        "hash": "e97fcd8c",
+        "encoded": "read%20-p%20%22Enter%20choice%20%5B1-4%5D:%20%22%20choice",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "ca8f1b",
+        "hash": "fa3c0a74",
+        "encoded": "case%20$choice%20in",
+        "prevChunkIds": []
+      },
+      "268": {
+        "chunkId": "ca8f1b",
+        "hash": "aa3da0cc",
+        "encoded": "1)",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "ca8f1b",
+        "hash": "afd8195b",
+        "encoded": "echo%20%22Deploying%20to%20Netlify...%22",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "ca8f1b",
+        "hash": "50075233",
+        "encoded": "netlify%20deploy%20--prod",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "ca8f1b",
+        "hash": "0965760e",
+        "encoded": ";;",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "ca8f1b",
+        "hash": "4c698c3a",
+        "encoded": "2)",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "ca8f1b",
+        "hash": "fc666263",
+        "encoded": "echo%20%22Deploying%20to%20Vercel...%22",
+        "prevChunkIds": []
+      },
+      "274": {
+        "chunkId": "ca8f1b",
+        "hash": "15b279cb",
+        "encoded": "vercel%20--prod",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "ca8f1b",
+        "hash": "d0b24d30",
+        "encoded": ";;",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "ca8f1b",
+        "hash": "f925a699",
+        "encoded": "3)",
+        "prevChunkIds": []
+      },
+      "277": {
+        "chunkId": "ca8f1b",
+        "hash": "771e45e4",
+        "encoded": "echo%20%22Deploying%20to%20Firebase...%22",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "ca8f1b",
+        "hash": "160e9423",
+        "encoded": "firebase%20deploy%20--only%20hosting",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "ca8f1b",
+        "hash": "2abde164",
+        "encoded": ";;",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "ca8f1b",
+        "hash": "2c25e084",
+        "encoded": "4)",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "ca8f1b",
+        "hash": "fab95812",
+        "encoded": "echo%20%22Pushing%20to%20GitHub...%22",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "ca8f1b",
+        "hash": "bb6e0ee8",
+        "encoded": "git%20add%20.",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "ca8f1b",
+        "hash": "f0074360",
+        "encoded": "git%20commit%20-m%20%22Deploy%20to%20GitHub%20Pages%22",
+        "prevChunkIds": []
+      },
+      "284": {
+        "chunkId": "ca8f1b",
+        "hash": "36166da5",
+        "encoded": "git%20push%20origin%20main",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "ca8f1b",
+        "hash": "47214c08",
+        "encoded": "echo%20%22Enable%20GitHub%20Pages%20in%20repository%20settings%22",
+        "prevChunkIds": []
+      },
+      "286": {
+        "chunkId": "ca8f1b",
+        "hash": "238f4e09",
+        "encoded": ";;",
+        "prevChunkIds": []
+      },
+      "287": {
+        "chunkId": "ca8f1b",
+        "hash": "c8ccd8fc",
+        "encoded": "*)",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "ca8f1b",
+        "hash": "1cf9f5c7",
+        "encoded": "echo%20%22Invalid%20choice%22",
+        "prevChunkIds": []
+      },
+      "289": {
+        "chunkId": "ca8f1b",
+        "hash": "d73d4e35",
+        "encoded": ";;",
+        "prevChunkIds": []
+      },
+      "290": {
+        "chunkId": "ca8f1b",
+        "hash": "a627ce55",
+        "encoded": "esac",
+        "prevChunkIds": []
+      },
+      "291": {
+        "chunkId": "ca8f1b",
+        "hash": "b0361828",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "293": {
+        "chunkId": "ca8f1b",
+        "hash": "f4f6b46b",
+        "encoded": "Make%20it%20executable:",
+        "prevChunkIds": []
+      },
+      "294": {
+        "chunkId": "ca8f1b",
+        "hash": "30ee7219",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "295": {
+        "chunkId": "ca8f1b",
+        "hash": "37e555ba",
+        "encoded": "chmod%20+x%20deploy.sh",
+        "prevChunkIds": []
+      },
+      "296": {
+        "chunkId": "ca8f1b",
+        "hash": "1e3b68a1",
+        "encoded": "./deploy.sh",
+        "prevChunkIds": []
+      },
+      "297": {
+        "chunkId": "ca8f1b",
+        "hash": "b1275e93",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "299": {
+        "chunkId": "ca8f1b",
+        "hash": "62a76815",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "ca8f1b",
+        "hash": "75e577e4",
+        "encoded": "##%20%F0%9F%8E%AF%20Recommended%20Platform%20Comparison",
+        "prevChunkIds": []
+      },
+      "303": {
+        "chunkId": "ca8f1b",
+        "hash": "af7213be",
+        "encoded": "%7C%20Platform%20%7C%20Difficulty%20%7C%20Speed%20%7C%20Free%20Tier%20%7C%20Custom%20Domain%20%7C%20HTTPS%20%7C%20Best%20For%20%7C",
+        "prevChunkIds": []
+      },
+      "304": {
+        "chunkId": "ca8f1b",
+        "hash": "22a0824c",
+        "encoded": "%7C----------%7C-----------%7C-------%7C-----------%7C---------------%7C-------%7C----------%7C",
+        "prevChunkIds": []
+      },
+      "305": {
+        "chunkId": "ca8f1b",
+        "hash": "93c49006",
+        "encoded": "%7C%20**Netlify**%20%7C%20%E2%AD%90%20Easy%20%7C%20%E2%9A%A1%20Fast%20%7C%20%E2%9C%85%20Yes%20%7C%20%E2%9C%85%20Free%20%7C%20%E2%9C%85%20Auto%20%7C%20Beginners%20%7C",
+        "prevChunkIds": []
+      },
+      "306": {
+        "chunkId": "ca8f1b",
+        "hash": "d587dec5",
+        "encoded": "%7C%20**Vercel**%20%7C%20%E2%AD%90%20Easy%20%7C%20%E2%9A%A1%20Fast%20%7C%20%E2%9C%85%20Yes%20%7C%20%E2%9C%85%20Free%20%7C%20%E2%9C%85%20Auto%20%7C%20Developers%20%7C",
+        "prevChunkIds": []
+      },
+      "307": {
+        "chunkId": "ca8f1b",
+        "hash": "29652f92",
+        "encoded": "%7C%20**Firebase**%20%7C%20%E2%AD%90%E2%AD%90%20Medium%20%7C%20%E2%9A%A1%20Fast%20%7C%20%E2%9C%85%20Yes%20%7C%20%E2%9C%85%20Free%20%7C%20%E2%9C%85%20Auto%20%7C%20Google%20ecosystem%20%7C",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "ca8f1b",
+        "hash": "030b4707",
+        "encoded": "%7C%20**GitHub%20Pages**%20%7C%20%E2%AD%90%20Easy%20%7C%20%E2%9A%A1%20Medium%20%7C%20%E2%9C%85%20Yes%20%7C%20%E2%9C%85%20Free%20%7C%20%E2%9C%85%20Auto%20%7C%20Open%20source%20%7C",
+        "prevChunkIds": []
+      },
+      "309": {
+        "chunkId": "ca8f1b",
+        "hash": "8f79ed57",
+        "encoded": "%7C%20**AWS%20S3**%20%7C%20%E2%AD%90%E2%AD%90%E2%AD%90%20Hard%20%7C%20%E2%9A%A1%20Fast%20%7C%20%E2%9A%A0%EF%B8%8F%20Limited%20%7C%20%F0%9F%92%B0%20Paid%20%7C%20%F0%9F%92%B0%20Paid%20%7C%20Enterprise%20%7C",
+        "prevChunkIds": []
+      },
+      "310": {
+        "chunkId": "ca8f1b",
+        "hash": "f8eeac49",
+        "encoded": "%7C%20**Azure**%20%7C%20%E2%AD%90%E2%AD%90%20Medium%20%7C%20%E2%9A%A1%20Fast%20%7C%20%E2%9C%85%20Yes%20%7C%20%E2%9C%85%20Free%20%7C%20%E2%9C%85%20Auto%20%7C%20Microsoft%20ecosystem%20%7C",
+        "prevChunkIds": []
+      },
+      "312": {
+        "chunkId": "ca8f1b",
+        "hash": "993dbf40",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "314": {
+        "chunkId": "ca8f1b",
+        "hash": "aaf5cd8b",
+        "encoded": "##%20%E2%9C%85%20Post-Deployment%20Checklist",
+        "prevChunkIds": []
+      },
+      "316": {
+        "chunkId": "ca8f1b",
+        "hash": "0198bbbf",
+        "encoded": "-%20%5B%20%5D%20Test%20the%20chatbot%20functionality",
+        "prevChunkIds": []
+      },
+      "317": {
+        "chunkId": "ca8f1b",
+        "hash": "122ea591",
+        "encoded": "-%20%5B%20%5D%20Verify%20all%20themes%20work%20correctly",
+        "prevChunkIds": []
+      },
+      "318": {
+        "chunkId": "ca8f1b",
+        "hash": "ee606ee9",
+        "encoded": "-%20%5B%20%5D%20Check%20mobile%20responsiveness",
+        "prevChunkIds": []
+      },
+      "319": {
+        "chunkId": "ca8f1b",
+        "hash": "a9b0a7e4",
+        "encoded": "-%20%5B%20%5D%20Test%20VIN%20validation%20with%20sample%20VINs",
+        "prevChunkIds": []
+      },
+      "320": {
+        "chunkId": "ca8f1b",
+        "hash": "f62ed38e",
+        "encoded": "-%20%5B%20%5D%20Verify%20map%20functionality%20(Leaflet)",
+        "prevChunkIds": []
+      },
+      "321": {
+        "chunkId": "ca8f1b",
+        "hash": "f15a6aaf",
+        "encoded": "-%20%5B%20%5D%20Test%20booking%20flow%20end-to-end",
+        "prevChunkIds": []
+      },
+      "322": {
+        "chunkId": "ca8f1b",
+        "hash": "8ee56493",
+        "encoded": "-%20%5B%20%5D%20Check%20all%20external%20CDN%20resources%20load%20(Bootstrap,%20Font%20Awesome,%20Leaflet)",
+        "prevChunkIds": []
+      },
+      "323": {
+        "chunkId": "ca8f1b",
+        "hash": "5ef5d4e7",
+        "encoded": "-%20%5B%20%5D%20Set%20up%20custom%20domain%20(optional)",
+        "prevChunkIds": []
+      },
+      "324": {
+        "chunkId": "ca8f1b",
+        "hash": "7fbba793",
+        "encoded": "-%20%5B%20%5D%20Configure%20analytics%20(Google%20Analytics,%20Plausible,%20etc.)",
+        "prevChunkIds": []
+      },
+      "325": {
+        "chunkId": "ca8f1b",
+        "hash": "f9488f95",
+        "encoded": "-%20%5B%20%5D%20Set%20up%20monitoring%20(UptimeRobot,%20Pingdom)",
+        "prevChunkIds": []
+      },
+      "327": {
+        "chunkId": "ca8f1b",
+        "hash": "fc8813e3",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "329": {
+        "chunkId": "ca8f1b",
+        "hash": "8d517966",
+        "encoded": "##%20%F0%9F%90%9B%20Troubleshooting",
+        "prevChunkIds": []
+      },
+      "331": {
+        "chunkId": "ca8f1b",
+        "hash": "18622b85",
+        "encoded": "###%20Issue:%20External%20resources%20not%20loading",
+        "prevChunkIds": []
+      },
+      "332": {
+        "chunkId": "ca8f1b",
+        "hash": "44b655ae",
+        "encoded": "**Solution**:%20Check%20Content%20Security%20Policy%20headers%20and%20ensure%20CDN%20URLs%20are%20accessible",
+        "prevChunkIds": []
+      },
+      "334": {
+        "chunkId": "ca8f1b",
+        "hash": "2a61db2c",
+        "encoded": "###%20Issue:%20Map%20not%20displaying",
+        "prevChunkIds": []
+      },
+      "335": {
+        "chunkId": "ca8f1b",
+        "hash": "9239f63b",
+        "encoded": "**Solution**:%20Verify%20Leaflet%20CSS%20and%20JS%20are%20loaded%20correctly.%20Check%20browser%20console%20for%20errors.",
+        "prevChunkIds": []
+      },
+      "337": {
+        "chunkId": "ca8f1b",
+        "hash": "b8a89f41",
+        "encoded": "###%20Issue:%20404%20errors%20on%20page%20refresh",
+        "prevChunkIds": []
+      },
+      "338": {
+        "chunkId": "ca8f1b",
+        "hash": "dcbf27d6",
+        "encoded": "**Solution**:%20Ensure%20your%20hosting%20platform%20is%20configured%20for%20SPA%20routing%20(see%20configuration%20files)",
+        "prevChunkIds": []
+      },
+      "340": {
+        "chunkId": "ca8f1b",
+        "hash": "ea4b8f51",
+        "encoded": "###%20Issue:%20Slow%20loading%20times",
+        "prevChunkIds": []
+      },
+      "341": {
+        "chunkId": "ca8f1b",
+        "hash": "aaea45c5",
+        "encoded": "**Solution**:",
+        "prevChunkIds": []
+      },
+      "342": {
+        "chunkId": "ca8f1b",
+        "hash": "838c2794",
+        "encoded": "-%20Enable%20CDN%20on%20your%20hosting%20platform",
+        "prevChunkIds": []
+      },
+      "343": {
+        "chunkId": "ca8f1b",
+        "hash": "351797ee",
+        "encoded": "-%20Optimize%20images",
+        "prevChunkIds": []
+      },
+      "344": {
+        "chunkId": "ca8f1b",
+        "hash": "0c43fd85",
+        "encoded": "-%20Enable%20caching%20headers%20(already%20configured%20in%20deployment%20files)",
+        "prevChunkIds": []
+      },
+      "346": {
+        "chunkId": "ca8f1b",
+        "hash": "a4893bcd",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "348": {
+        "chunkId": "ca8f1b",
+        "hash": "beb0aafa",
+        "encoded": "##%20%F0%9F%93%9E%20Support",
+        "prevChunkIds": []
+      },
+      "350": {
+        "chunkId": "ca8f1b",
+        "hash": "681b2049",
+        "encoded": "For%20deployment%20issues:",
+        "prevChunkIds": []
+      },
+      "351": {
+        "chunkId": "ca8f1b",
+        "hash": "e7e77007",
+        "encoded": "-%20**Netlify**:%20%5BNetlify%20Support%5D(https://www.netlify.com/support/)",
+        "prevChunkIds": []
+      },
+      "352": {
+        "chunkId": "ca8f1b",
+        "hash": "b79cd91b",
+        "encoded": "-%20**Vercel**:%20%5BVercel%20Documentation%5D(https://vercel.com/docs)",
+        "prevChunkIds": []
+      },
+      "353": {
+        "chunkId": "ca8f1b",
+        "hash": "0e61cf85",
+        "encoded": "-%20**Firebase**:%20%5BFirebase%20Support%5D(https://firebase.google.com/support)",
+        "prevChunkIds": []
+      },
+      "355": {
+        "chunkId": "ca8f1b",
+        "hash": "80855e41",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "357": {
+        "chunkId": "ca8f1b",
+        "hash": "6e477617",
+        "encoded": "##%20%F0%9F%8E%89%20Success!",
+        "prevChunkIds": []
+      },
+      "359": {
+        "chunkId": "ca8f1b",
+        "hash": "dbb7daa5",
+        "encoded": "Once%20deployed,%20share%20your%20chatbot%20URL%20with%20users.%20The%20application%20is%20fully%20functional%20and%20ready%20for%20public%20access!",
+        "prevChunkIds": []
+      },
+      "361": {
+        "chunkId": "ca8f1b",
+        "hash": "b7e4065c",
+        "encoded": "**Example%20URLs**:",
+        "prevChunkIds": []
+      },
+      "362": {
+        "chunkId": "ca8f1b",
+        "hash": "6b512ce5",
+        "encoded": "-%20Netlify:%20%60https://uk-recall-checker.netlify.app%60",
+        "prevChunkIds": []
+      },
+      "363": {
+        "chunkId": "ca8f1b",
+        "hash": "dff0025e",
+        "encoded": "-%20Vercel:%20%60https://uk-recall-checker.vercel.app%60",
+        "prevChunkIds": []
+      },
+      "364": {
+        "chunkId": "ca8f1b",
+        "hash": "daaf5416",
+        "encoded": "-%20Firebase:%20%60https://uk-recall-checker.web.app%60",
+        "prevChunkIds": []
+      },
+      "366": {
+        "chunkId": "ca8f1b",
+        "hash": "ecee4540",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "368": {
+        "chunkId": "ca8f1b",
+        "hash": "4dd9266e",
+        "encoded": "**Need%20help?**%20Create%20an%20issue%20in%20your%20repository%20or%20consult%20the%20platform-specific%20documentation.",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
