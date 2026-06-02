@@ -346,8 +346,10 @@ function initAuth() {
   }
   
   if (!isAuthenticated()) {
-    // Hide page content
-    document.body.style.visibility = 'hidden';
+    // Hide page content - safely check body exists
+    if (document.body) {
+      document.body.style.visibility = 'hidden';
+    }
     
     // Wait for DOM to be ready
     if (document.readyState === 'loading') {
@@ -358,8 +360,10 @@ function initAuth() {
       showLoginScreen();
     }
   } else {
-    // User is authenticated, show content
-    document.body.style.visibility = 'visible';
+    // User is authenticated, show content - safely check body exists
+    if (document.body) {
+      document.body.style.visibility = 'visible';
+    }
     
     // Add logout button when DOM is ready
     if (document.readyState === 'loading') {
@@ -370,9 +374,16 @@ function initAuth() {
   }
 }
 
-// Run authentication check when safe
+// Run authentication check when safe - ensure DOM is fully loaded
 if (document.readyState === 'loading') {
+  // DOM still loading, wait for it
   document.addEventListener('DOMContentLoaded', initAuth);
-} else {
-  initAuth();
+} else if (document.readyState === 'interactive' || document.readyState === 'complete') {
+  // DOM is ready, but double-check body exists
+  if (document.body) {
+    initAuth();
+  } else {
+    // Fallback: wait a bit and try again
+    setTimeout(initAuth, 50);
+  }
 }
