@@ -333,6 +333,18 @@ function addLogoutButton() {
 
 // Initialize authentication
 function initAuth() {
+  // Ensure document.body exists before accessing it
+  if (!document.body) {
+    // Body not ready yet, wait for DOM to load
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initAuth);
+    } else {
+      // Use setTimeout as fallback
+      setTimeout(initAuth, 10);
+    }
+    return;
+  }
+  
   if (!isAuthenticated()) {
     // Hide page content
     document.body.style.visibility = 'hidden';
@@ -358,5 +370,9 @@ function initAuth() {
   }
 }
 
-// Run authentication check immediately
-initAuth();
+// Run authentication check when safe
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initAuth);
+} else {
+  initAuth();
+}

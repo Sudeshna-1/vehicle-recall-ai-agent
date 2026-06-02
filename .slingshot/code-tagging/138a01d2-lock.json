@@ -1790,94 +1790,52 @@
         "encoded": "function%20initAuth()%20%7B",
         "prevChunkIds": []
       },
-      "335": {
+      "338": {
         "chunkId": "dbef9f",
-        "hash": "0c13caff",
-        "encoded": "if%20(!isAuthenticated())%20%7B",
-        "prevChunkIds": []
-      },
-      "336": {
-        "chunkId": "dbef9f",
-        "hash": "1e1c44b1",
-        "encoded": "//%20Hide%20page%20content",
-        "prevChunkIds": []
-      },
-      "337": {
-        "chunkId": "dbef9f",
-        "hash": "dfce60a4",
-        "encoded": "document.body.style.visibility%20=%20'hidden';",
-        "prevChunkIds": []
-      },
-      "339": {
-        "chunkId": "dbef9f",
-        "hash": "9effa099",
-        "encoded": "//%20Wait%20for%20DOM%20to%20be%20ready",
+        "hash": "35146a70",
+        "encoded": "if%20(document.readyState%20===%20'loading')%20%7B",
         "prevChunkIds": []
       },
       "340": {
         "chunkId": "dbef9f",
-        "hash": "45c9cddb",
-        "encoded": "if%20(document.readyState%20===%20'loading')%20%7B",
-        "prevChunkIds": []
-      },
-      "341": {
-        "chunkId": "dbef9f",
-        "hash": "23673f77",
-        "encoded": "document.addEventListener('DOMContentLoaded',%20()%20=%3E%20%7B",
-        "prevChunkIds": []
-      },
-      "342": {
-        "chunkId": "dbef9f",
-        "hash": "0bf8831c",
-        "encoded": "showLoginScreen();",
+        "hash": "60c1b66f",
+        "encoded": "%7D%20else%20%7B",
         "prevChunkIds": []
       },
       "343": {
         "chunkId": "dbef9f",
-        "hash": "aedf8e19",
-        "encoded": "%7D);",
-        "prevChunkIds": []
-      },
-      "344": {
-        "chunkId": "dbef9f",
-        "hash": "097d4903",
-        "encoded": "%7D%20else%20%7B",
+        "hash": "d4a1f253",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "345": {
         "chunkId": "dbef9f",
-        "hash": "e704ac51",
-        "encoded": "showLoginScreen();",
-        "prevChunkIds": []
-      },
-      "346": {
-        "chunkId": "dbef9f",
-        "hash": "b0d56384",
+        "hash": "992696b4",
         "encoded": "%7D",
         "prevChunkIds": []
       },
       "347": {
         "chunkId": "dbef9f",
-        "hash": "b95d3ed5",
-        "encoded": "%7D%20else%20%7B",
+        "hash": "371b097c",
+        "encoded": "if%20(!isAuthenticated())%20%7B",
         "prevChunkIds": []
       },
       "348": {
         "chunkId": "dbef9f",
-        "hash": "95a0c816",
-        "encoded": "//%20User%20is%20authenticated,%20show%20content",
+        "hash": "5d0b0fda",
+        "encoded": "//%20Hide%20page%20content",
         "prevChunkIds": []
       },
       "349": {
         "chunkId": "dbef9f",
-        "hash": "03377884",
-        "encoded": "document.body.style.visibility%20=%20'visible';",
+        "hash": "c4589ed0",
+        "encoded": "document.body.style.visibility%20=%20'hidden';",
         "prevChunkIds": []
       },
       "351": {
         "chunkId": "dbef9f",
-        "hash": "af825af1",
-        "encoded": "//%20Add%20logout%20button%20when%20DOM%20is%20ready",
+        "hash": "46b5c0b8",
+        "encoded": "//%20Wait%20for%20DOM%20to%20be%20ready",
         "prevChunkIds": []
       },
       "352": {
@@ -1888,32 +1846,32 @@
       },
       "353": {
         "chunkId": "dbef9f",
-        "hash": "13ae4fa9",
-        "encoded": "document.addEventListener('DOMContentLoaded',%20addLogoutButton);",
+        "hash": "3210547b",
+        "encoded": "document.addEventListener('DOMContentLoaded',%20()%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "354": {
         "chunkId": "dbef9f",
-        "hash": "16ec7ff3",
-        "encoded": "%7D%20else%20%7B",
+        "hash": "6905283b",
+        "encoded": "showLoginScreen();",
         "prevChunkIds": []
       },
       "355": {
         "chunkId": "dbef9f",
-        "hash": "0ce7fd5b",
-        "encoded": "addLogoutButton();",
+        "hash": "9b61a3d0",
+        "encoded": "%7D);",
         "prevChunkIds": []
       },
       "356": {
         "chunkId": "dbef9f",
-        "hash": "82776490",
-        "encoded": "%7D",
+        "hash": "2fd14207",
+        "encoded": "%7D%20else%20%7B",
         "prevChunkIds": []
       },
       "357": {
         "chunkId": "dbef9f",
-        "hash": "152d1847",
-        "encoded": "%7D",
+        "hash": "c0a8a861",
+        "encoded": "showLoginScreen();",
         "prevChunkIds": []
       },
       "358": {
@@ -1922,18 +1880,55 @@
         "encoded": "%7D",
         "prevChunkIds": []
       },
+      "359": {
+        "chunkId": "dbef9f",
+        "hash": "1eb2db69",
+        "encoded": "%7D%20else%20%7B",
+        "prevChunkIds": []
+      },
       "360": {
         "chunkId": "dbef9f",
-        "hash": "cdfdbee0",
-        "encoded": "//%20Run%20authentication%20check%20immediately",
+        "hash": "a55cf8b1",
+        "encoded": "//%20User%20is%20authenticated,%20show%20content",
         "prevChunkIds": []
       },
       "361": {
         "chunkId": "dbef9f",
-        "hash": "1695a94c",
+        "hash": "26f4618f",
+        "encoded": "document.body.style.visibility%20=%20'visible';",
+        "prevChunkIds": []
+      },
+      "363": {
+        "chunkId": "dbef9f",
+        "hash": "d4d7fa41",
+        "encoded": "//%20Add%20logout%20button%20when%20DOM%20is%20ready",
+        "prevChunkIds": []
+      },
+      "365": {
+        "chunkId": "dbef9f",
+        "hash": "1ff9cfcd",
+        "encoded": "document.addEventListener('DOMContentLoaded',%20addLogoutButton);",
+        "prevChunkIds": []
+      },
+      "367": {
+        "chunkId": "dbef9f",
+        "hash": "d67eea5b",
+        "encoded": "addLogoutButton();",
+        "prevChunkIds": []
+      },
+      "368": {
+        "chunkId": "dbef9f",
+        "hash": "0dbc34f0",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "376": {
+        "chunkId": "dbef9f",
+        "hash": "191c7702",
         "encoded": "initAuth();",
         "prevChunkIds": []
       }
-    }
+    },
+    "_prevLineCount": 378
   }
 }
