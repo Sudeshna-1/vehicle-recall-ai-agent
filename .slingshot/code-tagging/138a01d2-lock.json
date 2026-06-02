@@ -40,7 +40,7 @@
         "hash": "a8889541",
         "messageId": "system_addcb480-5eda-11f1-9bf5-4b3bf2742bfb",
         "codeBlockId": null,
-        "isActive": true,
+        "isActive": false,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4o\n- **timestamp**: 6/3/2026, 4:58:33 AM\n- **source**: agent\n- **type**: agentEditTool\n"
       },
       "d9b713": {
@@ -2500,6 +2500,7 @@
         "hash": "65226cb2",
         "encoded": "%7D",
         "prevChunkIds": [
+          "b98f1b",
           "dbef9f"
         ]
       },
@@ -2508,6 +2509,7 @@
         "hash": "d6f4908c",
         "encoded": "%7D",
         "prevChunkIds": [
+          "b98f1b",
           "dbef9f"
         ]
       },
@@ -2516,6 +2518,7 @@
         "hash": "2c81e00a",
         "encoded": "//%20Initialize%20authentication",
         "prevChunkIds": [
+          "b98f1b",
           "dbef9f"
         ]
       },
@@ -2524,6 +2527,7 @@
         "hash": "0bb12383",
         "encoded": "function%20initAuth()%20%7B",
         "prevChunkIds": [
+          "b98f1b",
           "dbef9f"
         ]
       },
@@ -2532,6 +2536,7 @@
         "hash": "dfdbb359",
         "encoded": "//%20Ensure%20document.body%20exists%20before%20accessing%20it",
         "prevChunkIds": [
+          "b98f1b",
           "dbef9f"
         ]
       },
@@ -2540,6 +2545,7 @@
         "hash": "f125f109",
         "encoded": "if%20(!document.body)%20%7B",
         "prevChunkIds": [
+          "b98f1b",
           "dbef9f"
         ]
       },
@@ -2548,6 +2554,7 @@
         "hash": "e9fcf5be",
         "encoded": "//%20Body%20not%20ready%20yet,%20wait%20for%20DOM%20to%20load",
         "prevChunkIds": [
+          "b98f1b",
           "dbef9f"
         ]
       },
@@ -2555,13 +2562,16 @@
         "chunkId": "b98f1b",
         "hash": "7b23fcff",
         "encoded": "if%20(document.readyState%20===%20'loading')%20%7B",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "b98f1b"
+        ]
       },
       "343": {
         "chunkId": "b98f1b",
         "hash": "b90fe5bf",
         "encoded": "document.addEventListener('DOMContentLoaded',%20initAuth);",
         "prevChunkIds": [
+          "b98f1b",
           "d9b713"
         ]
       },
@@ -2570,6 +2580,7 @@
         "hash": "097d4903",
         "encoded": "%7D%20else%20%7B",
         "prevChunkIds": [
+          "b98f1b",
           "d9b713"
         ]
       },
@@ -2578,6 +2589,7 @@
         "hash": "6b220831",
         "encoded": "//%20Use%20setTimeout%20as%20fallback",
         "prevChunkIds": [
+          "b98f1b",
           "d9b713"
         ]
       },
@@ -2586,6 +2598,7 @@
         "hash": "a40d3adb",
         "encoded": "setTimeout(initAuth,%2010);",
         "prevChunkIds": [
+          "b98f1b",
           "d9b713"
         ]
       },
@@ -2594,6 +2607,7 @@
         "hash": "15bfe668",
         "encoded": "%7D",
         "prevChunkIds": [
+          "b98f1b",
           "d9b713"
         ]
       },
@@ -2602,6 +2616,7 @@
         "hash": "8ff4e377",
         "encoded": "return;",
         "prevChunkIds": [
+          "b98f1b",
           "d9b713"
         ]
       },
@@ -2610,6 +2625,7 @@
         "hash": "e9514133",
         "encoded": "%7D",
         "prevChunkIds": [
+          "b98f1b",
           "d9b713"
         ]
       },
@@ -2618,251 +2634,192 @@
         "hash": "0d3058e7",
         "encoded": "if%20(!isAuthenticated())%20%7B",
         "prevChunkIds": [
-          "d9b713"
-        ]
-      },
-      "352": {
-        "chunkId": "b98f1b",
-        "hash": "6d4a536f",
-        "encoded": "//%20Show%20login%20screen%20first,%20then%20hide%20page%20content",
-        "prevChunkIds": [
-          "d9b713"
-        ]
-      },
-      "353": {
-        "chunkId": "b98f1b",
-        "hash": "9c35ab96",
-        "encoded": "showLoginScreen();",
-        "prevChunkIds": [
-          "d9b713"
-        ]
-      },
-      "355": {
-        "chunkId": "b98f1b",
-        "hash": "6aaec763",
-        "encoded": "//%20Hide%20page%20content%20AFTER%20login%20screen%20is%20shown%20-%20safely%20check%20body%20exists",
-        "prevChunkIds": [
+          "b98f1b",
           "d9b713"
         ]
       },
       "356": {
         "chunkId": "b98f1b",
-        "hash": "2f4547a4",
-        "encoded": "if%20(document.body)%20%7B",
-        "prevChunkIds": []
-      },
-      "357": {
-        "chunkId": "b98f1b",
-        "hash": "12cef371",
-        "encoded": "document.body.style.visibility%20=%20'hidden';",
-        "prevChunkIds": [
-          "d9b713"
-        ]
-      },
-      "358": {
-        "chunkId": "b98f1b",
-        "hash": "9cb0729a",
+        "hash": "82776490",
         "encoded": "%7D",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "b98f1b"
+        ]
       },
       "359": {
         "chunkId": "b98f1b",
-        "hash": "1eb2db69",
-        "encoded": "%7D%20else%20%7B",
+        "hash": "ef956f50",
+        "encoded": "if%20(document.body)%20%7B",
         "prevChunkIds": [
-          "d9b713"
+          "b98f1b"
         ]
       },
       "360": {
         "chunkId": "b98f1b",
-        "hash": "680d4cae",
-        "encoded": "//%20User%20is%20authenticated,%20show%20content%20-%20safely%20check%20body%20exists",
-        "prevChunkIds": []
-      },
-      "361": {
-        "chunkId": "b98f1b",
-        "hash": "5ed1b6b6",
-        "encoded": "if%20(document.body)%20%7B",
-        "prevChunkIds": []
-      },
-      "362": {
-        "chunkId": "b98f1b",
-        "hash": "a0aea9af",
+        "hash": "f5a08571",
         "encoded": "document.body.style.visibility%20=%20'visible';",
         "prevChunkIds": [
+          "b98f1b",
           "d9b713"
         ]
       },
-      "363": {
+      "364": {
         "chunkId": "b98f1b",
-        "hash": "b53124e3",
-        "encoded": "%7D",
+        "hash": "613ac315",
+        "encoded": "showLoginScreen();",
         "prevChunkIds": [
+          "b98f1b",
           "d9b713"
         ]
       },
       "365": {
         "chunkId": "b98f1b",
-        "hash": "ef4a650b",
-        "encoded": "//%20Add%20logout%20button%20when%20DOM%20is%20ready",
+        "hash": "462094e6",
+        "encoded": "%7D%20else%20%7B",
         "prevChunkIds": [
+          "b98f1b",
           "d9b713"
         ]
       },
       "366": {
         "chunkId": "b98f1b",
-        "hash": "507e41d2",
-        "encoded": "if%20(document.readyState%20===%20'loading')%20%7B",
+        "hash": "a5e9ff5a",
+        "encoded": "//%20User%20is%20authenticated,%20show%20content%20-%20safely%20check%20body%20exists",
         "prevChunkIds": [
-          "d9b713"
+          "b98f1b"
         ]
       },
       "367": {
         "chunkId": "b98f1b",
-        "hash": "03f11c67",
-        "encoded": "document.addEventListener('DOMContentLoaded',%20addLogoutButton);",
+        "hash": "b995422c",
+        "encoded": "if%20(document.body)%20%7B",
         "prevChunkIds": [
-          "d9b713"
-        ]
-      },
-      "368": {
-        "chunkId": "b98f1b",
-        "hash": "e829516b",
-        "encoded": "%7D%20else%20%7B",
-        "prevChunkIds": [
-          "d9b713"
-        ]
-      },
-      "369": {
-        "chunkId": "b98f1b",
-        "hash": "4b020188",
-        "encoded": "addLogoutButton();",
-        "prevChunkIds": [
-          "d9b713"
-        ]
-      },
-      "370": {
-        "chunkId": "b98f1b",
-        "hash": "4d8336e7",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "371": {
-        "chunkId": "dbef9f",
-        "hash": "edf9e4d3",
-        "encoded": "%7D",
-        "prevChunkIds": [
-          "d9b713",
-          "dbef9f"
-        ]
-      },
-      "372": {
-        "chunkId": "dbef9f",
-        "hash": "17de4d93",
-        "encoded": "%7D",
-        "prevChunkIds": [
-          "d9b713",
-          "dbef9f"
+          "b98f1b"
         ]
       },
       "375": {
-        "chunkId": "d9b713",
-        "hash": "942e4cda",
-        "encoded": "if%20(document.readyState%20===%20'loading')%20%7B",
+        "chunkId": "b98f1b",
+        "hash": "62c8ff13",
+        "encoded": "%7D",
         "prevChunkIds": [
-          "d9b713",
-          "6b8c1b"
+          "b98f1b",
+          "d9b713"
         ]
       },
-      "376": {
-        "chunkId": "40b12f",
-        "hash": "4f855036",
-        "encoded": "//%20Run%20authentication%20check%20when%20safe%20-%20ensure%20DOM%20is%20fully%20loaded",
-        "prevChunkIds": []
-      },
       "377": {
-        "chunkId": "40b12f",
-        "hash": "5f4c1f59",
-        "encoded": "if%20(document.readyState%20===%20'loading')%20%7B",
-        "prevChunkIds": []
+        "chunkId": "b98f1b",
+        "hash": "01755e59",
+        "encoded": "//%20Add%20logout%20button%20when%20DOM%20is%20ready",
+        "prevChunkIds": [
+          "b98f1b",
+          "d9b713"
+        ]
       },
       "378": {
-        "chunkId": "40b12f",
-        "hash": "b741d7b0",
-        "encoded": "//%20DOM%20still%20loading,%20wait%20for%20it",
-        "prevChunkIds": []
+        "chunkId": "b98f1b",
+        "hash": "960e43b3",
+        "encoded": "if%20(document.readyState%20===%20'loading')%20%7B",
+        "prevChunkIds": [
+          "b98f1b",
+          "d9b713"
+        ]
       },
       "379": {
-        "chunkId": "40b12f",
-        "hash": "61794516",
-        "encoded": "document.addEventListener('DOMContentLoaded',%20initAuth);",
-        "prevChunkIds": []
+        "chunkId": "b98f1b",
+        "hash": "37990a03",
+        "encoded": "document.addEventListener('DOMContentLoaded',%20addLogoutButton);",
+        "prevChunkIds": [
+          "b98f1b",
+          "d9b713"
+        ]
       },
       "380": {
-        "chunkId": "40b12f",
-        "hash": "e37cc35e",
-        "encoded": "%7D%20else%20if%20(document.readyState%20===%20'interactive'%20%7C%7C%20document.readyState%20===%20'complete')%20%7B",
-        "prevChunkIds": []
+        "chunkId": "b98f1b",
+        "hash": "69201c1a",
+        "encoded": "%7D%20else%20%7B",
+        "prevChunkIds": [
+          "b98f1b",
+          "d9b713"
+        ]
       },
       "381": {
-        "chunkId": "40b12f",
-        "hash": "eaac63a2",
-        "encoded": "//%20DOM%20is%20ready,%20but%20double-check%20body%20exists",
-        "prevChunkIds": []
+        "chunkId": "b98f1b",
+        "hash": "19f47fbc",
+        "encoded": "addLogoutButton();",
+        "prevChunkIds": [
+          "b98f1b",
+          "d9b713"
+        ]
       },
       "382": {
-        "chunkId": "40b12f",
-        "hash": "58f393d2",
-        "encoded": "if%20(document.body)%20%7B",
-        "prevChunkIds": []
+        "chunkId": "b98f1b",
+        "hash": "ecce4d1d",
+        "encoded": "%7D",
+        "prevChunkIds": [
+          "b98f1b"
+        ]
       },
       "383": {
-        "chunkId": "40b12f",
-        "hash": "e7fe6beb",
-        "encoded": "initAuth();",
-        "prevChunkIds": []
+        "chunkId": "dbef9f",
+        "hash": "94e63a84",
+        "encoded": "%7D",
+        "prevChunkIds": [
+          "dbef9f",
+          "d9b713"
+        ]
       },
       "384": {
-        "chunkId": "40b12f",
-        "hash": "d99c65e2",
-        "encoded": "%7D%20else%20%7B",
-        "prevChunkIds": []
-      },
-      "385": {
-        "chunkId": "40b12f",
-        "hash": "7e8d6867",
-        "encoded": "//%20Fallback:%20wait%20a%20bit%20and%20try%20again",
-        "prevChunkIds": []
+        "chunkId": "dbef9f",
+        "hash": "300c86ab",
+        "encoded": "%7D",
+        "prevChunkIds": [
+          "dbef9f",
+          "d9b713"
+        ]
       },
       "386": {
         "chunkId": "40b12f",
-        "hash": "093f0753",
-        "encoded": "setTimeout(initAuth,%2050);",
+        "hash": "4b881bbc",
+        "encoded": "//%20Run%20authentication%20check%20when%20safe%20-%20ensure%20DOM%20is%20fully%20loaded",
         "prevChunkIds": []
       },
       "387": {
-        "chunkId": "40b12f",
-        "hash": "9e53eae0",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "388": {
-        "chunkId": "40b12f",
-        "hash": "5e87b7c4",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "389": {
         "chunkId": "d9b713",
-        "hash": "27a2cdff",
-        "encoded": "document.addEventListener('DOMContentLoaded',%20initAuth);",
+        "hash": "263a1e9f",
+        "encoded": "if%20(document.readyState%20===%20'loading')%20%7B",
         "prevChunkIds": [
           "d9b713",
           "6b8c1b"
         ]
       },
+      "388": {
+        "chunkId": "40b12f",
+        "hash": "48f6fadc",
+        "encoded": "//%20DOM%20still%20loading,%20wait%20for%20it",
+        "prevChunkIds": []
+      },
+      "389": {
+        "chunkId": "40b12f",
+        "hash": "27a2cdff",
+        "encoded": "document.addEventListener('DOMContentLoaded',%20initAuth);",
+        "prevChunkIds": [
+          "d9b713"
+        ]
+      },
+      "390": {
+        "chunkId": "40b12f",
+        "hash": "5a2d697b",
+        "encoded": "%7D%20else%20if%20(document.readyState%20===%20'interactive'%20%7C%7C%20document.readyState%20===%20'complete')%20%7B",
+        "prevChunkIds": []
+      },
+      "391": {
+        "chunkId": "40b12f",
+        "hash": "8b58ce61",
+        "encoded": "//%20DOM%20is%20ready,%20but%20double-check%20body%20exists",
+        "prevChunkIds": []
+      },
       "392": {
-        "chunkId": "d9b713",
+        "chunkId": "40b12f",
         "hash": "a2a58a3b",
         "encoded": "if%20(document.body)%20%7B",
         "prevChunkIds": [
@@ -2870,43 +2827,50 @@
         ]
       },
       "393": {
-        "chunkId": "6b8c1b",
+        "chunkId": "40b12f",
         "hash": "caaf67dd",
         "encoded": "initAuth();",
         "prevChunkIds": [
-          "d9b713",
-          "6b8c1b",
-          "dbef9f"
+          "6b8c1b"
         ]
       },
       "394": {
-        "chunkId": "d9b713",
+        "chunkId": "40b12f",
         "hash": "04714724",
         "encoded": "%7D%20else%20%7B",
         "prevChunkIds": [
-          "d9b713",
-          "6b8c1b"
+          "d9b713"
         ]
       },
+      "395": {
+        "chunkId": "40b12f",
+        "hash": "af957cc2",
+        "encoded": "//%20Fallback:%20wait%20a%20bit%20and%20try%20again",
+        "prevChunkIds": []
+      },
+      "396": {
+        "chunkId": "40b12f",
+        "hash": "fe9c7d9b",
+        "encoded": "setTimeout(initAuth,%2050);",
+        "prevChunkIds": []
+      },
       "397": {
-        "chunkId": "d9b713",
+        "chunkId": "40b12f",
         "hash": "d4e48de9",
         "encoded": "%7D",
         "prevChunkIds": [
-          "d9b713",
-          "6b8c1b"
+          "d9b713"
         ]
       },
       "398": {
-        "chunkId": "d9b713",
+        "chunkId": "40b12f",
         "hash": "5272bb64",
         "encoded": "%7D",
         "prevChunkIds": [
-          "d9b713",
-          "6b8c1b"
+          "d9b713"
         ]
       }
     },
-    "_prevLineCount": 387
+    "_prevLineCount": 399
   }
 }

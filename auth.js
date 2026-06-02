@@ -299,6 +299,11 @@ function handleLogin(event) {
         if (document.body) {
           document.body.style.visibility = 'visible';
         }
+        // Show main content after successful login
+        const mainContent = document.querySelector('.container, main, #app, .app');
+        if (mainContent) {
+          mainContent.style.display = '';
+        }
       }, 500);
     } else {
       // Failed attempt
@@ -350,17 +355,29 @@ function initAuth() {
   }
   
   if (!isAuthenticated()) {
-    // Show login screen first, then hide page content
-    showLoginScreen();
-    
-    // Hide page content AFTER login screen is shown - safely check body exists
-    if (document.body) {
-      document.body.style.visibility = 'hidden';
+    // Hide main content but keep body visible for the auth overlay
+    const mainContent = document.querySelector('.container, main, #app, .app');
+    if (mainContent) {
+      mainContent.style.display = 'none';
     }
+    
+    // Ensure body is visible so auth overlay can be seen
+    if (document.body) {
+      document.body.style.visibility = 'visible';
+    }
+    
+    // Show login screen
+    showLoginScreen();
   } else {
     // User is authenticated, show content - safely check body exists
     if (document.body) {
       document.body.style.visibility = 'visible';
+    }
+    
+    // Show main content
+    const mainContent = document.querySelector('.container, main, #app, .app');
+    if (mainContent) {
+      mainContent.style.display = '';
     }
     
     // Add logout button when DOM is ready
