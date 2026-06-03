@@ -11,6 +11,9 @@ build/
 .env.local
 .env.*.local
 
+# Slingshot metadata (contains sensitive data from prompts)
+.slingshot/code-tagging/
+
 # IDE
 .vscode/
 .idea/
