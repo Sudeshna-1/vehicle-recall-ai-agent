@@ -265,20 +265,94 @@ function validatePostcode(pc) {
 // ══════════════════════════════════════
 async function mockAPICall(vin) {
   await new Promise(r => setTimeout(r, 1100));
-  const found = MOCK_VIN_API[vin];
-  if (found) {
-    window._apiResponse = found;
-    await botReply(`🚗 Vehicle found in DVSA records:<br>
-      <strong>${found.make} ${found.model} (${found.year})</strong> — ${found.colour}<br><br>
-      Now I need to verify ownership. Please enter your <strong>V5C document reference number</strong>.<br>
-      <span style="color:var(--text-muted);font-size:.77rem">Found on your V5C logbook (e.g. V5C-BMW-001)</span>`);
-    step = 'awaitV5C';
-    setPlaceholder('Enter your V5C reference…');
-    addChips(['V5C-BMW-001','V5C-FORD-002','V5C-VW-003','V5C-JAG-004']);
-  } else {
-    await botReply(`ℹ️ No vehicle found for VIN <code style="background:rgba(255,255,255,.08);padding:1px 5px;border-radius:4px">${vin}</code> in the current DVSA database.<br><br>
-      Your vehicle may have no active recalls, or the VIN may be incorrect. Try one of these sample VINs:`);
-    addChips(['WBA3A5G59DNP26082','1HGCM82633A123456','WVWZZZ1JZ3W386752','SAJWA0ES5DMS50268']);
+  
+  // Call actual mock API endpoint instead of hardcoded data
+  try {
+    // Use API_CONFIG from config.js
+    const apiUrl = window.API_CONFIG?.VIN_RECALL_API || 'https://6901dcb0b208b24affe4006c.mockapi.io/recallstatus/vin2';
+    console.log('🔍 Calling VIN Recall API:', apiUrl);
+    console.log('🔍 Looking for VIN:', vin);
+    
+    const response = await fetch(apiUrl);
+    console.log('📡 API Response Status:', response.status, response.statusText);
+    
+    if (!response.ok) {
+      throw new Error(`API call failed: ${response.status} ${response.statusText}`);
+    }
+    
+    const data = await response.json();
+    console.log('✅ API Response Data:', data);
+    console.log('📊 Total records received:', data.length);
+    
+    // Find the VIN in the API response - handle nested structure
+    const found = data.find(item => {
+      // Check if VIN matches in the nested structure
+      const matches = item.vin_recall && 
+                     item.vin_recall[0] && 
+                     item.vin_recall[0].vehicle && 
+                     item.vin_recall[0].vehicle.vin === vin;
+      
+      if (matches) {
+        console.log('🎯 MATCH FOUND for VIN:', vin);
+      }
+      return matches;
+    });
+    
+    console.log('🔎 Search result for VIN', vin, ':', found ? 'FOUND' : 'NOT FOUND');
+    if (found) {
+      console.log('📋 Found VIN data:', found);
+    }
+    
+    if (found && found.vin_recall && found.vin_recall[0]) {
+      const vinRecall = found.vin_recall[0];
+      const vehicle = vinRecall.vehicle || {};
+      const recallDetails = vinRecall.recall_details?.recall?.[0] || {};
+      
+      // Check if there's an active recall
+      const hasActiveRecall = recallDetails.vin_campaign_status === 'ACTIVE';
+      
+      if (hasActiveRecall) {
+        // Map API response to expected format
+        window._apiResponse = {
+          make: 'Nissan',
+          model: vehicle.vehicle_desc || 'Unknown',
+          year: vehicle.model_year || 'N/A',
+          colour: 'N/A',
+          image: 'https://placehold.co/400x110/1a2235/94a3b8?text=Vehicle',
+          recall: {
+            id: recallDetails.nissan_campaign_number || recallDetails.agency_campaign_number,
+            active: true,
+            description: recallDetails.campaign_desc || 'No description available',
+            risk: recallDetails.condition_and_risk?.includes('fire') ? 'HIGH' : 
+                  recallDetails.condition_and_risk ? 'MEDIUM' : 'LOW',
+            type: recallDetails.type_of_campaign || 'Safety',
+            issued: recallDetails.vin_live_date || recallDetails.agency_report_date || 'N/A',
+            remedy: recallDetails.repair_description || 'Free repair at authorized dealer'
+          }
+        };
+        vinData = window._apiResponse;
+        
+        await botReply(`🚗 Vehicle found in DVSA records:<br>
+          <strong>${window._apiResponse.make} ${window._apiResponse.model} (${window._apiResponse.year})</strong> — ${window._apiResponse.colour}<br><br>
+          Now I need to verify ownership. Please enter your <strong>V5C document reference number</strong>.<br>
+          <span style="color:var(--text-muted);font-size:.77rem">Found on your V5C logbook (e.g. V5C-BMW-001)</span>`);
+        step = 'awaitV5C';
+        setPlaceholder('Enter your V5C reference…');
+        addChips(['V5C-BMW-001','V5C-FORD-002','V5C-VW-003','V5C-JAG-004']);
+      } else {
+        await botReply(`ℹ️ No active recall found for VIN <code style="background:rgba(255,255,255,.08);padding:1px 5px;border-radius:4px">${vin}</code> in the current DVSA database.<br><br>
+          Your vehicle may have no active recalls, or the VIN may be incorrect. Try one of these sample VINs:`);
+        addChips(['WBA3A5G59DNP26082','1HGCM82633A123456','WVWZZZ1JZ3W386752','SAJWA0ES5DMS50268','VSKCTND25U0173625']);
+      }
+    } else {
+      await botReply(`ℹ️ No active recall found for VIN <code style="background:rgba(255,255,255,.08);padding:1px 5px;border-radius:4px">${vin}</code> in the current DVSA database.<br><br>
+        Your vehicle may have no active recalls, or the VIN may be incorrect. Try one of these sample VINs:`);
+      addChips(['WBA3A5G59DNP26082','1HGCM82633A123456','WVWZZZ1JZ3W386752','SAJWA0ES5DMS50268','VSKCTND25U0173625']);
+    }
+  } catch (error) {
+    console.error('API Error:', error);
+    await botReply(`⚠️ Error connecting to DVSA database. Please try again or contact customer care.<br>
+      <span style="color:var(--text-muted);font-size:.77rem">Error: ${error.message}</span>`);
   }
 }
 
@@ -318,7 +392,36 @@ async function showRecallResult() {
 //  DEALERS + LEAFLET MAP
 // ══════════════════════════════════════
 async function showDealers(postcode) {
-  const cards = MOCK_DEALERS.map((d, i) => `
+  // Call actual dealer API endpoint
+  let dealers = MOCK_DEALERS; // Fallback to hardcoded data
+  
+  try {
+    const apiUrl = 'https://69082f61b49bea95fbf2a042.mockapi.io/dealerinfo/zipcode/content';
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+    
+    // Filter dealers by postcode
+    const apiDealers = data.filter(d => d.zipcode === postcode.replace(/\s/g, '').toUpperCase());
+    
+    if (apiDealers.length > 0) {
+      // Map API response to expected format
+      dealers = apiDealers.map(d => ({
+        name: d.dealerName || d.name,
+        address: d.address,
+        phone: d.phone || 'N/A',
+        distance: d.distance || 'N/A',
+        rating: d.rating || 4.5,
+        slots: d.slots || 'Available',
+        lat: d.lat || 51.5074,
+        lng: d.lng || -0.1278
+      }));
+    }
+  } catch (error) {
+    console.error('Dealer API Error:', error);
+    // Continue with fallback MOCK_DEALERS data
+  }
+  
+  const cards = dealers.map((d, i) => `
     <div class="dealer-card" id="dcard-${i}" onclick="highlightMarker(${i})" style="cursor:pointer">
       <div class="d-flex justify-content-between align-items-start">
         <div class="d-name">
@@ -333,10 +436,13 @@ async function showDealers(postcode) {
       </div>
       <div style="color:var(--text-muted);font-size:.75rem;margin-top:6px"><i class="fa fa-calendar me-1"></i>${d.slots}</div>
       <div style="color:var(--text-muted);font-size:.75rem;margin-bottom:8px"><i class="fa fa-phone me-1"></i>${d.phone}</div>
-      <button onclick="event.stopPropagation();encourageBooking('${d.name.replace(/'/g,"\\'")}');this.closest('.msg').querySelectorAll('button').forEach(b=>b.disabled=true);this.innerHTML='<i class=\\'fa fa-spinner fa-spin me-1\\'></i>Booking…'" style="width:100%;padding:6px;background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;border:none;border-radius:7px;font-size:.76rem;font-weight:600;cursor:pointer;transition:opacity .15s">
+      <button onclick="event.stopPropagation();encourageBooking('${d.name.replace(/'/g,"\\'")}'');this.closest('.msg').querySelectorAll('button').forEach(b=>b.disabled=true);this.innerHTML='<i class=\'fa fa-spinner fa-spin me-1\'></i>Booking…'" style="width:100%;padding:6px;background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;border:none;border-radius:7px;font-size:.76rem;font-weight:600;cursor:pointer;transition:opacity .15s">
         <i class="fa fa-calendar-plus me-1"></i>Book Appointment
       </button>
     </div>`).join('');
+  
+  // Store dealers globally for map initialization
+  window._currentDealers = dealers;
 
   const mapHtml = `
     <strong>📍 Authorised Dealers near ${postcode.toUpperCase()}</strong>
@@ -350,7 +456,7 @@ async function showDealers(postcode) {
   await botReply(mapHtml, 600, true);
   setTimeout(() => initDealerMap(), 100);
 
-  await botReply(`✅ <strong>${MOCK_DEALERS.length} authorised dealers</strong> found near you.<br><br>
+  await botReply(`✅ <strong>${dealers.length} authorised dealers</strong> found near you.<br><br>
     Click a dealer card to highlight it on the map, then hit <strong>Book Appointment</strong> to get your free recall repair booked right here.`);
   step = 'awaitBookingChoice';
   setPlaceholder('Type a message or click Book Appointment…');
@@ -361,16 +467,19 @@ function initDealerMap() {
   if (!el || typeof L === 'undefined') return;
   if (dealerMapInstance) { dealerMapInstance.remove(); dealerMapInstance = null; }
 
+  // Use dealers from API response or fallback to MOCK_DEALERS
+  const dealers = window._currentDealers || MOCK_DEALERS;
+
   const center = [
-    MOCK_DEALERS.reduce((s,d) => s + d.lat, 0) / MOCK_DEALERS.length,
-    MOCK_DEALERS.reduce((s,d) => s + d.lng, 0) / MOCK_DEALERS.length
+    dealers.reduce((s,d) => s + d.lat, 0) / dealers.length,
+    dealers.reduce((s,d) => s + d.lng, 0) / dealers.length
   ];
   dealerMapInstance = L.map('dealerMap', { zoomControl: true, scrollWheelZoom: false }).setView(center, 12);
   L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
     attribution: '© OpenStreetMap © CartoDB', maxZoom: 19
   }).addTo(dealerMapInstance);
 
-  window._dealerMarkers = MOCK_DEALERS.map((d, i) => {
+  window._dealerMarkers = dealers.map((d, i) => {
     const icon = L.divIcon({
       className: '',
       html: `<div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#4f8ef7,#7b5ea7);color:#fff;font-size:.72rem;font-weight:700;display:flex;align-items:center;justify-content:center;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.4)">${i+1}</div>`,
@@ -386,8 +495,9 @@ function initDealerMap() {
 
 function highlightMarker(idx) {
   if (!window._dealerMarkers) return;
+  const dealers = window._currentDealers || MOCK_DEALERS;
   window._dealerMarkers[idx].openPopup();
-  dealerMapInstance.setView([MOCK_DEALERS[idx].lat, MOCK_DEALERS[idx].lng], 14, { animate: true });
+  dealerMapInstance.setView([dealers[idx].lat, dealers[idx].lng], 14, { animate: true });
   document.querySelectorAll('.dealer-card').forEach((c,i) => {
     c.style.borderColor = i === idx ? 'var(--primary)' : '';
     c.style.background  = i === idx ? 'rgba(79,142,247,.08)' : '';
@@ -416,13 +526,32 @@ async function encourageBooking(dealerName) {
 
 async function fetchUserInfoForBooking() {
   await new Promise(r => setTimeout(r, 1000));
-  const user = MOCK_USER_API[currentVIN];
-  if (!user) {
-    await botReply(`⚠️ Could not retrieve account details for this VIN. Please call the dealer directly.`);
+  
+  // Call actual user info API endpoint
+  try {
+    const apiUrl = 'https://6900a9cdff8d792314bae1f9.mockapi.io/getinfo';
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+    
+    // Find user by VIN
+    const user = data.find(item => item.vin === currentVIN);
+    
+    if (!user) {
+      await botReply(`⚠️ Could not retrieve account details for this VIN. Please call the dealer directly.`);
+      step = 'done'; return;
+    }
+    
+    bookingUser = {
+      name: user.first_name + ' ' + (user.lastName || user.last_name || ''),
+      email: user.email,
+      phone: user.phone
+    };
+    bookingEmail = user.email;
+  } catch (error) {
+    console.error('User Info API Error:', error);
+    await botReply(`⚠️ Error fetching user information. Please try again or contact customer care.`);
     step = 'done'; return;
   }
-  bookingUser = user;
-  bookingEmail = user.email;
 
   const html = `
     <div class="booking-info-card">
@@ -430,14 +559,14 @@ async function fetchUserInfoForBooking() {
         <i class="fa fa-shield-halved me-1" style="color:var(--primary)"></i>
         Details retrieved — shown in encrypted format for your privacy
       </div>
-      <div class="info-row"><span class="info-label">Full Name</span><span class="info-val">${maskName(user.name)} <span class="encrypt-tag">🔒 masked</span></span></div>
-      <div class="info-row"><span class="info-label">Email</span><span class="info-val">${maskEmail(user.email)} <span class="encrypt-tag">🔒 masked</span></span></div>
-      <div class="info-row"><span class="info-label">Phone</span><span class="info-val">${maskPhone(user.phone)} <span class="encrypt-tag">🔒 masked</span></span></div>
+      <div class="info-row"><span class="info-label">Full Name</span><span class="info-val">${maskName(bookingUser.name)} <span class="encrypt-tag">🔒 masked</span></span></div>
+      <div class="info-row"><span class="info-label">Email</span><span class="info-val">${maskEmail(bookingUser.email)} <span class="encrypt-tag">🔒 masked</span></span></div>
+      <div class="info-row"><span class="info-label">Phone</span><span class="info-val">${maskPhone(bookingUser.phone)} <span class="encrypt-tag">🔒 masked</span></span></div>
       <div class="info-row"><span class="info-label">Vehicle</span><span class="info-val">${vinData.make} ${vinData.model} ${vinData.year}</span></div>
     </div>`;
   await botReply(html, 500, true);
   await botReply(`Do these details look correct?<br><br>
-    I'll send a one-time verification code to <strong>${maskEmail(user.email)}</strong>.<br>
+    I'll send a one-time verification code to <strong>${maskEmail(bookingUser.email)}</strong>.<br>
     Or you can provide an <strong>alternate email</strong> if you prefer.`);
 
   const actionHtml = `
@@ -448,7 +577,7 @@ async function fetchUserInfoForBooking() {
       </div>
       <div style="display:flex;gap:8px;margin-top:8px">
         <button class="confirm-btn" style="flex:1" onclick="sendOTPToEmail()">
-          <i class="fa fa-envelope me-2"></i>Send OTP to ${maskEmail(user.email)}
+          <i class="fa fa-envelope me-2"></i>Send OTP to ${maskEmail(bookingUser.email)}
         </button>
       </div>
     </div>`;
